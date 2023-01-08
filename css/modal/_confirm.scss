@@ -1,0 +1,34 @@
+// Текстовое выделение
+.mark{
+  &_text{
+    // Белый
+    &-white{
+      color: $white;
+      text-shadow: 2px 2px $white-shadow;
+    }
+    // Голубой
+    &-aqua{
+      color: $aqua;
+      text-shadow: 2px 2px $aqua-shadow;
+    }
+    // Золотой
+    &-gold{
+      color: $gold;
+      text-shadow: 2px 2px $gold-shadow;
+    }
+    // Красный
+    &-red{
+      color: $red;
+      text-shadow: 2px 2px $red-shadow;
+    }
+  }
+}
+
+//
+.item-preview{
+  display: block;
+  margin: 25px auto 15px;
+  height: 240px;
+  width: 240px;
+  object-fit: contain;
+}

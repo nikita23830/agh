@@ -1,0 +1,49 @@
+.text{
+  --color: #{$white};
+  --text-shadow: #{$white-shadow};
+
+  font-family: inherit;
+  color: var(--color);
+  text-shadow: var(--text-shadow-size) var(--text-shadow-size) var(--text-shadow);
+
+  // Инициализация модификаторов
+  &_style{
+    // Цвет текста
+    @each $value in $colors-map {
+      &-#{$value}{
+        --color: var(--#{$value});
+        --text-shadow: var(--#{$value}-shadow);
+      }
+    }
+
+    // Выравнивание текста по левому краю
+    &-left{
+      text-align: left;
+    }
+
+    // Выравнивание текста по-центру
+    &-center{
+      text-align: center;
+    }
+
+    // Выравнивание текста по правому краю
+    &-right{
+      float: right;
+    }
+
+    // Трансформирование текста по-умолчанию
+    &-initial{
+      text-transform: initial;
+    }
+
+    // Запрет переносов текста
+    &-nowrap{
+      white-space: nowrap
+    }
+
+    // Отключение text-shadow
+    &-noshadow{
+      --text-shadow-size: 0;
+    }
+  }
+}

@@ -1,0 +1,198 @@
+<div class="modal">
+    <div class="wrapper wrapper_modal">
+        <div class="modal-area modal-area_windowed buy-item">
+            <!-- Покупка предмета -->
+            <div class="modal-area__section">
+                <div class="buy-item__view window">
+                    <img src="images/shop/26.png" alt
+                         class="buy-item__view-icon">
+                </div>
+                <h2 class="modal-area__heading buy-item__heading buy-item__heading_style-gold">
+                    Ихоровая роба
+                </h2>
+                <p class="buy-item__mod-info">Thaumic Tinkerer</p>
+                <div class="buy-item__section">
+                    <span class="buy-item__section-title">Введите количество</span>
+                    <a href="#" class="btn btn_danger buy-item__section-control">-</a>
+                    <input type="number" class="buy-item__section-input" value="1" placeholder="0" max="9999">
+                    <a href="#" class="btn btn_success buy-item__section-control">+</a>
+                </div>
+                <div class="buy-item__section buy-item__section_enchant">
+                    Зачаруйте предмет
+                    <a href="#" class="btn btn_violet" onclick="itemEnchant()">Зачаровать</a>
+                    <ul class="buy-item__section-list">
+                        <li class="buy-item__section-list-item">
+                            <span>Защита IV</span>
+                            <span class="buy-item__section-list-item__price">
+                                120
+                                <span class="currency currency_size-24"></span>
+                            </span>
+                        </li>
+                        <li class="buy-item__section-list-item">
+                            <span>Взрывойстойчивость VIII</span>
+                            <span class="buy-item__section-list-item__price">
+                                80
+                                <span class="currency currency_size-24"></span>
+                            </span>
+                        </li>
+                        <li class="buy-item__section-list-item">
+                            <span>Защита от снарядов III</span>
+                            <span class="buy-item__section-list-item__price">
+                                40
+                                <span class="currency currency_size-24"></span>
+                            </span>
+                        </li>
+                        <li class="buy-item__section-list-item">
+                            <span>Лёгкость II</span>
+                            <span class="buy-item__section-list-item__price">
+                                20
+                                <span class="currency currency_size-24"></span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn_success btn_purchase modal-trigger">
+                    <span class="btn_purchase-section">
+                        725 <span class="currency_offset currency"></span>
+                    </span>
+                    <span class="btn_purchase-section">
+                        Купить
+                    </span>
+                </a>
+            </div>
+            <!-- Зачарование предмета -->
+            <div class="buy-item__enchant">
+                <div class="buy-item__enchant-content">
+                    <h3 class="buy-item__enchant-heading">Зачарование предмета</h3>
+                    <ul class="buy-item__enchant-list">
+                        <li class="buy-item__enchant-option buy-item__enchant-option_checked">
+                            <div>
+                                <span class="tooltip-trigger"
+                                      data-title="Защита"
+                                      data-row="Преобразует весь урон от всех источников в урон брони"
+                                      data-meta="Цена за уровень - <span class=white>30</span> <span class='currency currency_size-24'></span>">
+                                    Защита
+                                </span>
+                            </div>
+                            <a href="#" class="buy-item__enchant-option__btn">-</a>
+                            <span class="buy-item__enchant-option__lvl">
+                                IV
+                            </span>
+                            <a href="#" class="buy-item__enchant-option__btn">+</a>
+                            <div class="buy-item__enchant-option__price">
+                                120 <span class="currency"></span>
+                            </div>
+                        </li>
+                        <li class="buy-item__enchant-option">
+                            <div>
+                                <span class="tooltip-trigger"
+                                      data-title="Огнестойкость"
+                                      data-row="Защищает от огня и лавы, уменьшает время горения"
+                                      data-meta="Цена за уровень - <span class=white>30</span> <span class='currency currency_size-24'></span>">
+                                    Огнестойкость
+                                </span>
+                            </div>
+                            <a href="#" class="buy-item__enchant-option__btn">-</a>
+                            <span class="buy-item__enchant-option__lvl">
+                                -
+                            </span>
+                            <a href="#" class="buy-item__enchant-option__btn">+</a>
+                        </li>
+                        <li class="buy-item__enchant-option buy-item__enchant-option_checked">
+                            <div>
+                                <span class="tooltip-trigger"
+                                      data-title="Взрывоустойчивость"
+                                      data-row="Снижает урон и уменьшает отдачу от взрывов"
+                                      data-meta="Цена за уровень - <span class=white>10</span> <span class='currency currency_size-24'></span>">
+                                    Взрывоустойчивость
+                                </span>
+                            </div>
+                            <a href="#" class="buy-item__enchant-option__btn">-</a>
+                            <span class="buy-item__enchant-option__lvl">
+                                VII
+                            </span>
+                            <a href="#" class="buy-item__enchant-option__btn">+</a>
+                            <div class="buy-item__enchant-option__price">
+                                80 <span class="currency"></span>
+                            </div>
+                        </li>
+                        <li class="buy-item__enchant-option buy-item__enchant-option_checked">
+                            <div>
+                                <span class="tooltip-trigger"
+                                      data-title="Защита от снарядов"
+                                      data-row="Защищает от стрел и огненных шаров"
+                                      data-meta="Цена за уровень - <span class=white>15</span> <span class='currency currency_size-24'></span>">
+                                    Защита от снарядов
+                                </span>
+                            </div>
+                            <a href="#" class="buy-item__enchant-option__btn">-</a>
+                            <span class="buy-item__enchant-option__lvl">
+                                III
+                            </span>
+                            <a href="#" class="buy-item__enchant-option__btn">+</a>
+                            <div class="buy-item__enchant-option__price">
+                                40 <span class="currency"></span>
+                            </div>
+                        </li>
+                        <li class="buy-item__enchant-option">
+                            <div>
+                                <span class="tooltip-trigger"
+                                      data-title="Шипы"
+                                      data-row="С некоторым шансом наносит урон атакующему!"
+                                      data-meta="Цена за уровень - <span class=white>45</span> <span class='currency currency_size-24'></span>">
+                                    Шипы
+                                </span>
+                            </div>
+                            <a href="#" class="buy-item__enchant-option__btn">-</a>
+                            <span class="buy-item__enchant-option__lvl">
+                                -
+                            </span>
+                            <a href="#" class="buy-item__enchant-option__btn">+</a>
+                        </li>
+                        <li class="buy-item__enchant-option">
+                            <div>
+                                <span class="tooltip-trigger"
+                                      data-title="Прочность"
+                                      data-row="Ресурс инструмента или брони уменьшается медленнее"
+                                      data-meta="Цена за уровень - <span class=white>15</span> <span class='currency currency_size-24'></span>">
+                                    Прочность
+                                </span>
+                            </div>
+                            <a href="#" class="buy-item__enchant-option__btn">-</a>
+                            <span class="buy-item__enchant-option__lvl">
+                                -
+                            </span>
+                            <a href="#" class="buy-item__enchant-option__btn">+</a>
+                        </li>
+                        <li class="buy-item__enchant-option buy-item__enchant-option_checked">
+                            <div>
+                                <span class="tooltip-trigger"
+                                      data-title="Лёгкость"
+                                      data-row="Снижает урон от падения"
+                                      data-meta="Цена за уровень - <span class=white>10</span> <span class='currency currency_size-24'></span>">
+                                    Лёгкость
+                                </span>
+                            </div>
+                            <a href="#" class="buy-item__enchant-option__btn">-</a>
+                            <span class="buy-item__enchant-option__lvl">
+                                II
+                            </span>
+                            <a href="#" class="buy-item__enchant-option__btn">+</a>
+                            <div class="buy-item__enchant-option__price">
+                                20 <span class="currency"></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn_secondary" onclick="itemEnchant()">Назад</a>
+                    <a href="#" class="btn btn_violet" onclick="itemEnchant()">Подтвердить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Кнопка закрытия окна *** справа сверху -->
+    <button
+            class="closing-key tooltip-trigger"
+            data-title="<span class=white>Вернуться назад<span>"
+    >
+    </button>
+</div>

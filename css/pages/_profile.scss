@@ -1,0 +1,170 @@
+.profile{
+  padding: 50px 0;
+  align-items: start;
+
+  // Колонка с основным содержанием
+  &-content{
+    position: relative;
+    width: 65%;
+    z-index: 1;
+  }
+
+  // Контейнер для раздела
+  &-area{
+    --background: #{alpha($black, .5)};
+    --shadow: #{$dark-gray};
+
+    background: var(--background);
+    padding: 25px;
+    margin: 35px 0 0;
+    @include bordered(var(--shadow));
+
+    // Цветовая стилизация раздела для разных привилегий
+    &_status{
+      &-vip{
+        --background: #{alpha($green-shadow, .4)};
+        --shadow: #{$green};
+      }
+      &-premium{
+        --background: #{alpha($blue-shadow, .4)};
+        --shadow: #{$blue};
+      }
+      &-deluxe{
+        --background: #{alpha($dark-purple-shadow, .4)};
+        --shadow: #{$light-purple};
+      }
+      &-legend{
+        --background: #{alpha($gold-shadow, .4)};
+        --shadow: #{$gold};
+      }
+    }
+
+    // Заголовок раздела
+    &__heading{
+      --text-shadow-size: 3px;
+
+      font-size: 20px;
+      color: $white;
+      margin: 0 0 15px;
+      text-shadow: 3px 3px $white-shadow;
+    }
+
+    // Контейнер со списком друзей
+    &__friends{
+      // Список друзей
+      &-list{
+        display: grid;
+        grid-template-columns: repeat(10, 60px);
+        grid-gap: 15px;
+
+        margin: 0 0 15px;
+        list-style: none;
+      }
+
+      // Элемент списка друзей
+      &-item{
+        --background: #{alpha($gray, .1)};
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--background);
+        width: 60px;
+        height: 60px;
+        padding: 0;
+        @include bordered(var(--background));
+
+        // Модификатор с стилизацией типа карточки,
+        // когда игрок находится в сети
+        &_type{
+          &-online{
+            --background: #{alpha($blue, .2)};
+          }
+        }
+
+        // Аватарка игрока
+        img{
+          display: block;
+          width: 45px;
+          image-rendering: pixelated;
+        }
+      }
+    }
+  }
+
+  // Внутренние компоненты раздела
+  &__stats{
+    // Заголовок третьего уровня
+    &-heading{
+      font-size: 16px;
+      color: $gray;
+      text-shadow: 2px 2px $gray-shadow;
+    }
+
+    // Разделитель между разными частями раздела
+    &-separator{
+      display: block;
+      border: none;
+      background: $gray-shadow;
+      margin: 15px 0;
+      height: 5px;
+    }
+  }
+
+  // Контейнер с сеткой
+  // для основной информации в профиле
+  &__header-stats{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-gap: 15px;
+
+    line-height: 1.2;
+    color: $gray;
+    text-shadow: 6px 6px $gray-shadow;
+    list-style: none;
+
+    // Значение параметров
+    // группа, уровень боевого пропуск и проч.
+    &__value{
+      --text-shadow-size: 6px;
+
+      font-family: MinecraftTitle,sans-serif;
+      font-size: 42px;
+    }
+  }
+
+  // Контейнер с карточками
+  // с ссылкой на подраздел профиля
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+
+    margin: 35px 0 0;
+
+    // Карточка
+    &__item {
+      line-height: 1.5;
+      margin: 0;
+      padding: 25px 10px;
+
+      // Картинка в карточке
+      &-img {
+        display: block;
+        margin: 25px auto 0;
+        width: 112px;
+        height: 112px;
+        image-rendering: pixelated;
+      }
+    }
+  }
+
+  // Рендер скина в 3D
+  &-skin{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    pointer-events: none;
+  }
+}

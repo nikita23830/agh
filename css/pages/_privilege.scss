@@ -1,0 +1,47 @@
+.privilege{
+
+  &__features{
+    // Разделитель
+    &-separator{
+      border: none;
+      background:alpha($gray-shadow, .9);
+      width: 75px;
+      height: 4px;
+      margin: 12px auto;
+      //box-shadow: 4px 4px alpha($black, .4);
+    }
+    // Список преимуществ группы
+    &-list{
+      line-height: 18px;
+      font-size: 14px;
+      color: alpha($gray, .7);
+      text-shadow: 0 0 transparent;
+      list-style: none;
+
+      // Отступы между элементами списка
+      &-item{
+        margin-top: 10px;
+      }
+      // Акцентное выделение текста
+      &-mark{
+        color: var(--color);
+      }
+    }
+  }
+
+  // Вместо модификаторов
+  .donate-card{
+    padding: 15px 25px 30px;
+
+    &__price-strike{
+      display: inline-block;
+      margin: 0;
+    }
+  }
+  .donate-card__title{
+    line-height: .8;
+    font-size: 36px;
+    padding-top: 0;
+    margin-bottom: 10px;
+  }
+}

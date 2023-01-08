@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <!-- Standard Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Site Properities -->
+    <title>SC | Альтернативное главное меню</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/pages/index.legacy/style.min.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap.grid.css">
+    <!--<link rel="icon" type="image/png" href="favicon.ico" />-->
+
+    <!-- Scripts -->
+    <!--Здесь пока ничего нет-->
+</head>
+<body class="overlay-check">
+    <div class="overlay">
+        <div class="main-menu">
+            <!-- Кнопка закрытия окна *** справа сверху -->
+            <button
+                    class="overlay_close tooltip-trigger"
+                    data-title="<span class=gray>Закрыть меню<span>"
+            >
+            </button>
+            <!-- Левый сайдбар с "опции", "выход" и прочее -->
+            <div class="sidebar">
+                <div class="row align-items-center justify-content-start flex-column">
+                    <button
+                            class="user tooltip-trigger"
+                            data-title="Профиль Nebelherz"
+                            data-row="
+                                    Ваша группа:
+                                    <span class=gold>Premium</span>
+                                    <br>
+                                    <br>
+                                    Боевой пропуск:
+                                    <span class=green>5 уровень</span>
+                                    <br>
+                                    Получено
+                                    <span class=green>4 награды</span>
+                                    из 200
+                                    <br>
+                                    Выполнено
+                                    <span class=green>32 задания</span>
+                            "
+                            data-meta="Кликните, чтобы открыть"
+                    ></button>
+                    <!-- Достижения -->
+                    <button
+                            class="achievements tooltip-trigger"
+                            data-title="
+                                    <span class=gold>Список достижений</span>
+                            "
+                            data-row="Все достижения из Minecraft и модификаций сервера"
+                            data-meta="Кликните, чтобы открыть"
+                    ></button>
+                    <!-- Статистика -->
+                    <button
+                            class="stats tooltip-trigger"
+                            data-title="Ваша статистика"
+                            data-row="Время в игре, поставлено или скрафчено блоков, убийство мобов - всё здесь!"
+                            data-meta="Кликните, чтобы открыть"
+                    ></button>
+                    <!-- Настройки -->
+                    <button
+                            class="settings tooltip-trigger"
+                            data-title="Настройки игры"
+                            data-row="Настройте графику, звук или управление — всё для Вашего комфорта в игре!"
+                            data-meta="Кликните, чтобы открыть"
+                    ></button>
+                    <!-- Сайт проекта -->
+                    <button
+                            class="globe tooltip-trigger"
+                            data-title="
+                                    <span class=green>Перейти на сайт проекта</span>
+                            "
+                            data-row="Всё самое важное, нужное и интересное публикуется на нашем сайте!"
+                            data-meta="Кликните, чтобы открыть"
+                    ></button>
+                    <!-- Техническая поддержка -->
+                    <button
+                            class="help tooltip-trigger"
+                            data-title="
+                                    <span class=green>Вам нужна помощь?</span>
+                            "
+                            data-row="Напишите в нашу техническую поддержку, мы Вам поможем! =)"
+                            data-meta="Кликните, чтобы открыть"
+                    ></button>
+                    <!-- Выйти с сервера -->
+                    <button
+                            class="exit tooltip-trigger"
+                            data-title="
+                                    <span class=red>Выход с сервера<span>
+                            "
+                    ></button>
+                </div>
+            </div>
+            <!-- Основной контейнер -->
+            <div class="dashboard">
+                <div class="group-user">
+                    <h1>Главное меню</h1>
+                    <p>
+                        <a href="#" class="btn green">194 рубля</a>
+                        <a href="#" class="btn blue coins">2 084 коинов</a>
+                    </p>
+                </div>
+                <div class="group-btn">
+                    <h2>Навигация</h2>
+                    <div class="row">
+                        <div class="col-3">
+                            <button class="btn donate gold tooltip-trigger"
+                                    data-title="
+                                            <span class=gold>Наши привилегии</span>
+                            "
+                                    data-row="
+                                            Хотите иметь больше приватов, команд и возможностей?
+                                            <br>
+                                            <span class=white>Наши Donate-группы воплотят Ваши мечты в реальности!</span>
+                            "
+                                    data-meta="Кликните для перехода"
+                            >
+                                ДОНАТ
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn shop green tooltip-trigger"
+                                    data-title="
+                                    <span class=green>Магазин блоков</span>
+                            "
+                                    data-row="Все самые необходимые ресурсы по бросовой цене, не проходи мимо!"
+                                    data-meta="Кликните для перехода"
+                            >
+                                МАГАЗИН
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn cases light-purple tooltip-trigger"
+                                    data-title="
+                                    <span class=light-purple>Наши кейсы</span>
+                            "
+                                    data-row="Испытайте свою удачу и получите особо ценные награды!"
+                                    data-meta="Кликните для перехода"
+                            >
+                                КЕЙСЫ
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn kits blue tooltip-trigger"
+                                    data-title="Наборы ресурсов"
+                                    data-row="Воплотите свои самые смелые фантазии в жизнь;)"
+                                    data-meta="Кликните для перехода"
+                            >
+                                НАБОРЫ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-btn">
+                    <h2>Аукцион сервера</h2>
+                    <div class="row">
+                        <div class="col-3">
+                            <button class="btn auction gold-hover tooltip-trigger"
+                                    data-title="
+                                            <span class=gold>Аукцион предметов</span>
+                                    "
+                                    data-row="
+                                            Здесь можно продавать или покупать у других игроков любые предметы за <span class=gold>КОИНЫ</span>!
+                                    "
+                                    data-meta="Кликните, чтобы открыть"
+                            >
+                                АУКЦИОН
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn buy light-purple-hover tooltip-trigger"
+                                    data-title="
+                                            <span class=light-purple>Покупка предметов</span>
+                                    "
+                                    data-row="
+                                            Здесь Вы можете покупать ценные ресурсы и многое другое за <span class=gold>КОИНЫ</span>!
+                                    "
+                                    data-meta="Кликните, чтобы открыть"
+                            >
+                                КУПИТЬ
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn sell green-hover tooltip-trigger"
+                                    data-title="
+                                            <span class=green>Продажа предметов</span>
+                                    "
+                                    data-row="
+                                            Здесь Вы можете выставить на продажу любой игровой предмет за <span class=gold>КОИНЫ</span>
+                                    "
+                                    data-meta="Кликните, чтобы открыть"
+                            >
+                                ПРОДАТЬ
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn cart aqua-hover tooltip-trigger"
+                                    data-title="Корзина покупок"
+                                    data-row="
+                                            Здесь хранятся все Ваши покупки и киты — <span class=gold>/cart</span>
+                                    "
+                                    data-meta="Кликните, чтобы открыть"
+                            >
+                                КОРЗИНА
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="group-btn">
+                    <h2>Помощь</h2>
+                    <div class="row">
+                        <div class="col-3">
+                            <button class="btn vk blue-hover tooltip-trigger"
+                                    data-title="Последние новости"
+                                    data-row="
+                                            Наша группа ВКонтакте, где публикуются самые последние и актуальные новости.
+                                    "
+                                    data-meta="Кликните, чтобы открыть"
+                            >
+                                НОВОСТИ
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn exchange green-hover tooltip-trigger"
+                                    data-title="
+                                            <span class=green>Как работает обмен?</span>
+                                    "
+                                    data-row="
+                                            Гайд по команде <span class=gold>/exchange</span> и как работает система обмена на наших серверах.
+                                    "
+                                    data-meta="Кликните, чтобы открыть"
+                            >
+                                ОБМЕН
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn banned red-hover tooltip-trigger"
+                                    data-title="
+                                            <span class=red>Запрещенные предметы</span>
+                                    "
+                                    data-row="
+                                            Список предметов, которые запрещены на наших серверах.
+                                    "
+                                    data-meta="Кликните, чтобы открыть"
+                            >
+                                ЗАПРЕТЫ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Персонаж -->
+            <div class="character">
+                <h2>QueenOfPeace</h2>
+                <p>
+                    <span class="green"><</span><span class="red">GrandModer</span><span class="green">></span>
+                </p>
+                <img src="images/character.png" alt>
+                <button class="btn blue profile">Открыть профиль</button>
+                <button class="btn green balance">Пополнить баланс</button>
+                <button class="btn wardrobe">Настроить внешность</button>
+            </div>
+            <!-- Список друзей -->
+            <div class="companions">
+                <div class="column">
+                    <h2>Список друзей</h2>
+                    <div class="group online">
+                        <h3>В сети — <span class="mark">4</span></h3>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-11.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>DarthSidi0us</h4>
+                                <p>В сети</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-12.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>Mine03</h4>
+                                <p>В сети</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-10.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>Shadow_Legends</h4>
+                                <p>В сети</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-9.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>xxxDark12xxx</h4>
+                                <p>В сети</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="group offline">
+                        <h3>
+                            Не в сети — <span class="mark">3</span>
+                        </h3>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-2.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>QueenOfPeace</h4>
+                                <p>Не в сети</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-3.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>IBath</h4>
+                                <p>Не в сети</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-5.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>noremac09</h4>
+                                <p>Не в сети</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="group nearby">
+                        <h3>
+                            Поблизости — <span class="mark">17</span>
+                        </h3>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-4.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>JoyereKnester</h4>
+                                <p>2 блока от Вас</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-6.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>Evaer_cool12</h4>
+                                <p>17 блоков от Вас</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-7.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>Mle4niy_kill_bioy</h4>
+                                <p>22 блока от Вас</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-8.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>No4naya_Nyasha</h4>
+                                <p>34 блока от Вас</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-9.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>Azazzzinys</h4>
+                                <p>56 блоков от Вас</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-12.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>KillerMoj</h4>
+                                <p>57 блоков от Вас</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-11.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>Likeaboss</h4>
+                                <p>66 блоков от Вас</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-10.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>vonderlol</h4>
+                                <p>72 блока от Вас</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-4.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>Alexsasha93</h4>
+                                <p>73 блока от Вас</p>
+                            </div>
+                        </a>
+                        <a href="#" class="row user">
+                            <div class="image">
+                                <img src="images/heads/head-5.png" alt>
+                            </div>
+                            <div class="col">
+                                <h4>geraosfrrr</h4>
+                                <p>127 блоков от Вас</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tooltip" style="display: none">
+        <div class="tooltip__content">
+            <h3 class="tooltip__title">Ультра квантовая панель</h3>
+            <p class="tooltip__row">Полная хуета</p>
+            <p class="tooltip__meta">Vanilla Minecraft</p>
+        </div>
+    </div>
+    <script>
+        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // !!!!!!!!!!!!!! ОСТОРОЖНО, НИЖЕ ЛЮТЫЙ ГОВНОКОД !!!!!!!!!!!!!!!!
+        // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+        // Генератор случайных чисел
+        const randomNum = (min, max) => Math.floor(Math.random()*(max-min+1)+min),
+            checked = 'overlay-check'; // Класс открытия оверлея
+
+        // Обработчик кликов для открытия/закрытия главного меню
+        document.body.onclick = (e) => {
+            switch(e.target.classList[0]){
+                case 'overlay':
+                    document.body.classList.toggle(checked);
+                    break;
+                case 'overlay_close':
+                    document.body.classList.remove(checked);
+                    break;
+            }
+        };
+
+        // Обработчик нажатия клавиши Escape для открытия/закрытия главного меню
+        document.addEventListener('keydown', (e) => {
+            switch(e.key){
+                case "Escape":
+                    document.getElementsByClassName('overlay')[0].click();
+                    break;
+            }
+        });
+
+        // Реализация тултипов
+        //
+        // Элементу, на который хотим повесить тултип
+        // добавляем класс tooltip-trigger
+        //
+        // data-title — заголовок тултипа
+        // data-meta — описание, текст в тултипа
+        // data-note — синяя нижняя строчка, заметка
+        //
+        let item = document.querySelectorAll('.tooltip-trigger');
+        // Работает хер знает как (с божьей помощью)
+        // Реализацию взял со своего старого проекта, вникать времени нет :-(
+        item.forEach((item) =>{
+            // Получаем контейнер тултипа
+            let tooltip = document.getElementsByClassName('tooltip')[0];
+
+            // Накидываем события при наведении
+            item.addEventListener('mouseover', () =>{
+                // Заменяем содержание тултпиа на нужное
+                const replaceText = (selector, value) => {
+                    // Для сокращения записи селектор элемента присваиваем переменной
+                    const item = tooltip.getElementsByClassName(`tooltip__${selector}`)[0];
+                    // Проверка на отсутствие значения
+                    if (value === undefined){
+                        // Если значение отсутствует, то полностью скрываем элемент
+                        // Чтобы в тексте не выводилось "undefined"
+                        item.style.display = 'none';
+                        // Сбарсываем переменную
+                        return false;
+                    }
+                    // Иначе проставляем display block
+                    // Чтобы отобразить элемент, если он был скрыт ранее
+                    item.style.display = 'block';
+                    // Присваиваем значение
+                    item.innerHTML = value
+                }
+                // Проставляем заголовок
+                replaceText('title', item.dataset.title);
+                // Описание (текст) в тултипе
+                replaceText('row', item.dataset.row);
+                // Синяя "заметка", самая нижняя строчка
+                replaceText('meta', item.dataset.meta);
+            });
+
+            // Если мышь покинула элемент
+            // Отключаем тултип
+            item.addEventListener('mouseout', () =>{
+                tooltip.style.display="none";
+            });
+
+            // Перемещение тултипа за мышью
+            item.addEventListener('mousemove', (event) =>{
+                let // Ширина тултипа
+                    tooltipWidth = tooltip.offsetWidth,
+                    // Ширина окна
+                    windowWidth = document.documentElement.clientWidth,
+                    // Координаты
+                    y = event.clientY,
+                    // Проверка на выход за пределы окна
+                    x = ((document.body.offsetWidth - event.clientX) > 350)
+                        ? event.clientX + 15
+                        : event.clientX - (tooltipWidth + 15);
+
+                tooltip.style.cssText = `top:${y}px;left:${x}px`;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/*
+** На экране боевого пропуска ещё используется .overlay_type-battle-pass
+** Это модификатор для компонента .overlay
+** Он находится в модуле _wallpaper.scss
+*/
+
+.battle-pass{
+  padding: 25px 0!important;
+
+  //
+  &__content{
+    --background: #{alpha($black, .5)};
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px 15px;
+
+    background: var(--background);
+    margin: 25px 0;
+    padding: 15px;
+    @include bordered(var(--background), 10);
+  }
+
+  @import
+          'battle-pass/__progress',
+          'battle-pass/__awards',
+          'battle-pass/__quests';
+}

@@ -1,0 +1,52 @@
+.currency{
+  --size: 28px;
+
+  display: inline-block;
+  background: url('#{$url}icon/balance-rubles.gif') no-repeat center;
+  background-size: contain;
+  width: var(--size);
+  height: var(--size);
+  image-rendering: pixelated;
+  vertical-align: top;
+
+  &_coin{
+    background-image: url('#{$url}icon/balance-coins.gif');
+  }
+
+  &_gem{
+    background-image: url('#{$url}icon/balance-gem.gif');
+  }
+
+  // Центрирование по-вертикали иконки с валютой
+  &_offset{
+    margin: -4px 0;
+  }
+
+  // Модификаторы размера
+  &_size{
+    &-16{
+      --size: 16px;
+    }
+    &-20{
+      --size: 20px;
+    }
+    &-24{
+      --size: 24px;
+    }
+    &-32{
+      --size: 32px;
+    }
+    &-36{
+      --size: 36px;
+    }
+    &-42{
+      --size: 42px;
+    }
+    &-48{
+      --size: 48px;
+    }
+    &-64{
+      --size: 64px;
+    }
+  }
+}

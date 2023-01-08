@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <!-- Standard Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Site Properities -->
+    <title>SC | Донат-услуги</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!--<link rel="icon" type="image/png" href="favicon.ico" />-->
+
+    <!-- Scripts -->
+    <!--Здесь пока ничего нет-->
+</head>
+<body class="overlay-checked">
+<div class="overlay">
+    <div class="header">
+        <div class="wrapper">
+            <ul class="header-list">
+                <!-- Назад в главное меню -->
+                <li class="header-section">
+                    <a href="index.html"
+                       class="btn-hover
+                              header-item
+                              tooltip-trigger"
+                       data-title="Вернуться назад"
+                       data-meta="Кликни сюда!"
+                    >
+                        <img src="images/icon/menu.png"
+                             class="header-item__img" alt>
+                        Назад
+                    </a>
+
+                    <!-- Корзина -->
+                    <a href="cart.html"
+                       class="btn-hover
+                              header-item
+                              tooltip-trigger"
+                       data-title="Мои покупки"
+                       data-row="
+                                 <span class=dark-gray>Здесь пока ничего нет</span>
+                       "
+                    >
+                        <img src="images/icon/cart.png"
+                             class="header-item__img" alt>
+                        <span class="text text_style-gray">
+                            Мои покупки
+                        </span>
+                    </a>
+                </li>
+
+                <!-- Элемент-заполнитель -->
+                <li>
+
+                </li>
+
+                <li class="header-section">
+                    <!-- Баланс РУБЛЕЙ -->
+                    <a class="btn-hover
+                              header-item
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="Пополнить баланс"
+                       data-row="
+                                 На балансе
+                                 <span class=green>
+                                    0
+                                    <i class='currency currency_size-24'></i>
+                                 </span>
+                                 рублей
+                       "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="add-balance"
+                    >
+                        <i class="currency currency_size-32"></i>
+                        <span class="text text_style-green">0 РУБ.</span>
+                    </a>
+
+                    <!-- Баланс КОИНОВ -->
+                    <a class="btn-hover
+                              header-item
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="Обменник коинов"
+                       data-row="
+                                 На счету
+                                 <span class=gold>
+                                    7 890
+                                    <i class='currency currency_coin currency_size-24'></i>
+                                 </span>
+                                 коинов
+                       "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="coins-exchange"
+                    >
+                        <i class="currency currency_coin currency_size-32"></i>
+                        <span class="text text_style-gold">7 890</span>
+                    </a>
+
+                    <!-- Мой профиль -->
+                    <a href="profile.html"
+                       class="btn-hover
+                              header-item
+                              tooltip-trigger"
+                       data-title="Мой профиль"
+                       data-row="
+                                 <span class=dark-gray>Аккаунт:</span>
+                                 <i class='tooltip-avatar'></i>
+                                 Nebelherz
+                                 <br>
+                                 <span class=dark-gray>Игровой статус:</span>
+                                 <span class=light-purple>Deluxe</span>
+                       "
+                       data-meta="Кликни сюда!"
+                    >
+                        <img src="images/icon/profile.png"
+                             class="header-item__img" alt>
+                        Мой профиль
+                    </a>
+                </li>
+            </ul>
+            <div class="nav">
+                <a href="shop.html"
+                   class="btn
+                          nav-item
+                          nav-item_role-control
+                          tooltip-trigger"
+                   data-title="<span class=gray>Ранее:</span> <span class=green>Магазин блоков</span>"
+                   data-row="Нажми <span class=aqua>Q</span> или <span class=aqua>кликни</span>"
+                >
+                    <i class="nav-icon nav-icon_arrow-left"></i>
+                    Q
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="shop.html"
+                           class="btn
+                                  nav-item
+                                  tooltip-trigger"
+                           data-title="<span class=green>Магазин блоков</span>"
+                           data-row="<span class=gold>Покупайте</span> все необходимые ресурсы в два клика за <i class='currency currency_size-24'></i>"
+                           data-meta="Кликни сюда!"
+                        >
+                            Магазин блоков
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="privilege.html"
+                           class="btn
+                                  nav-item
+                                  nav-item_checked
+                                  tooltip-trigger"
+                           data-title="<span class=gold>Игровые статусы</span>"
+                           data-row="
+                                    Хотите иметь больше приватов, команд и возможностей?
+                                    <br>
+                                    <span class=green>Воплотите мечту в реальность!</span>
+                                    "
+                           data-meta="Кликни сюда!"
+                        >
+                            Игровые статусы
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="cases.html"
+                           class="btn
+                                  nav-item
+                                  tooltip-trigger"
+                           data-title="<span class=light-purple>Кейсы</span>"
+                           data-row="Испытайте свою удачу и получите особо ценные награды!"
+                           data-meta="Кликни сюда!"
+                        >
+                            Кейсы
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="kits.html"
+                           class="btn
+                                  nav-item
+                                  tooltip-trigger"
+                           data-title="Наборы ресурсов"
+                           data-row="Воплотите свои самые смелые фантазии в жизнь;)"
+                           data-meta="Кликни сюда!"
+                        >
+                            Наборы ресурсов
+                        </a>
+                    </li>
+                </ul>
+                <a href="cases.html"
+                   class="btn
+                          nav-item
+                          nav-item_role-control
+                          tooltip-trigger"
+                   data-title="<span class=gray>Далее:</span> <span class=light-purple>Кейсы</span>"
+                   data-row="Нажми <span class=aqua>E</span> или <span class=aqua>кликни</span>"
+                >
+                    E
+                    <i class="nav-icon nav-icon_arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page privilege">
+        <div class="wrapper">
+            <div class="page__area">
+                <h2 class="page__area-heading">
+                    Скидки закончатся через
+                    <span class="page__area-heading__timer">
+                            <span id="timerHour">03</span>:<span id="timerMin">44</span>:<span id="timerSec">13</span>
+                        </span>
+                </h2>
+                <ul class="donate__list animate-list">
+                    <li class="donate__list-item">
+                        <a href="#"
+                           class="btn
+                                  donate-card
+                                  donate-card_style-gold
+                                  modal-trigger
+                                  tooltip-trigger"
+                           data-title="Подробнее о статусе"
+                           data-meta="Кликни сюда!"
+                           data-modal-name="privilege-legend"
+                        >
+                            <div class="donate-card__sale">
+                                <span class="donate-card__sale-text">СКИДКА 25%</span>
+                            </div>
+                            <img src="images/privilege/legend.png" alt
+                                 class="donate-card__icon">
+                            <h3 class="donate-card__title">
+                                LEGEND
+                            </h3>
+                            <p class="donate-card__price">
+                                <span class="donate-card__price-strike">
+                                    1 000
+                                    <i class="currency currency_size-24"></i>
+                                </span>
+                                700 <i class="currency currency_size-24"></i>
+                            </p>
+                            <hr class="privilege__features-separator">
+                            <ul class="privilege__features-list">
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        +10
+                                    </span>
+                                    регионов по
+                                    <br>
+                                    <span class="privilege__features-list-mark">
+                                        600
+                                    </span>
+                                    тысяч блоков и
+                                    <br>
+                                    доступны
+                                    <span class="privilege__features-list-mark">
+                                        ВСЕ ФЛАГИ
+                                    </span>
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        +30
+                                    </span>
+                                    игровых команд
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">Скин и плащ</span>
+                                    в
+                                    <span class="privilege__features-list-mark">HD</span>
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        /kit LEGEND
+                                    </span>
+                                    <br>
+                                    <span class="privilege__features-list-mark">
+                                        /kit EGGS
+                                    </span>
+                                    <br>
+                                    наборы ресурсов
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        ОФОРМЛЕНИЕ В ЧАТЕ
+                                    </span>
+                                    <br>
+                                    префикса и суффикса
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        ВСЕ ВОЗМОЖНОСТИ
+                                    </span>
+                                    <br>
+                                    предыдущих групп
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="donate__list-item">
+                        <a href="#"
+                           class="btn
+                                  donate-card
+                                  donate-card_style-light-purple
+                                  modal-trigger
+                                  tooltip-trigger"
+                           data-title="Подробнее о статусе"
+                           data-meta="Кликни сюда!"
+                           data-modal-name="privilege-deluxe"
+                        >
+                            <div class="donate-card__sale">
+                                <span class="donate-card__sale-text">СКИДКА 25%</span>
+                            </div>
+                            <img src="images/privilege/deluxe.png" alt
+                                 class="donate-card__icon">
+                            <h3 class="donate-card__title">
+                                DELUXE
+                            </h3>
+                            <p class="donate-card__price">
+                                <span class="donate-card__price-strike">
+                                    500 <i class="currency currency_size-24"></i>
+                                </span>
+                                350 <i class="currency currency_size-24"></i>
+                            </p>
+                            <hr class="privilege__features-separator">
+                            <ul class="privilege__features-list">
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        +8
+                                    </span>
+                                    регионов по
+                                    <br>
+                                    <span class="privilege__features-list-mark">
+                                        200
+                                    </span>
+                                    тысяч блоков и
+                                    <br>
+                                    <span class="privilege__features-list-mark">
+                                        +18
+                                    </span>
+                                    полезных флагов
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        +22
+                                    </span>
+                                    игровых команд
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">Скин и плащ</span>
+                                    в
+                                    <span class="privilege__features-list-mark">HD</span>
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        /kit DELUXE
+                                    </span>
+                                    <br>
+                                    <span class="privilege__features-list-mark">
+                                        /kit EXP
+                                    </span>
+                                    <br>
+                                    наборы ресурсов
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        ОФОРМЛЕНИЕ В ЧАТЕ
+                                    </span>
+                                    <br>
+                                    префикса и суффикса
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        ВСЕ ВОЗМОЖНОСТИ
+                                    </span>
+                                    <br>
+                                    предыдущих групп
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="donate__list-item">
+                        <a href="#"
+                           class="btn
+                                  donate-card
+                                  donate-card_style-blue
+                                  modal-trigger
+                                  tooltip-trigger"
+                           data-title="Подробнее о статусе"
+                           data-meta="Кликни сюда!"
+                           data-modal-name="privilege-premium"
+                        >
+                            <div class="donate-card__sale">
+                                <span class="donate-card__sale-text">СКИДКА 25%</span>
+                            </div>
+                            <img src="images/privilege/premium.png" alt
+                                 class="donate-card__icon">
+                            <h3 class="donate-card__title">
+                                PREMIUM
+                            </h3>
+                            <p class="donate-card__price">
+                                <span class="donate-card__price-strike">
+                                    300 <i class="currency currency_size-24"></i>
+                                </span>
+                                150 <i class="currency currency_size-24"></i>
+                            </p>
+                            <hr class="privilege__features-separator">
+                            <ul class="privilege__features-list">
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        +6
+                                    </span>
+                                    регионов по
+                                    <br>
+                                    <span class="privilege__features-list-mark">
+                                        150
+                                    </span>
+                                    тысяч блоков и
+                                    <br>
+                                    <span class="privilege__features-list-mark">
+                                        +13
+                                    </span>
+                                    полезных флагов
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        +16
+                                    </span>
+                                    игровых команд
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">Скин и плащ </span>
+                                    в
+                                    <span class="privilege__features-list-mark">HD</span>
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        /kit PREMIUM
+                                    </span>
+                                    <br>
+                                    <span class="privilege__features-list-mark">
+                                        /kit ARMOR
+                                    </span>
+                                    <br>
+                                    наборы ресурсов
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        ОФОРМЛЕНИЕ В ЧАТЕ
+                                    </span>
+                                    <br>
+                                    суффикса
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    Все возможности
+                                    <span class="privilege__features-list-mark">
+                                        VIP
+                                    </span>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="donate__list-item">
+                        <a href="#"
+                           class="btn
+                                  donate-card
+                                  donate-card_style-green
+                                  modal-trigger
+                                  tooltip-trigger"
+                           data-title="Подробнее о статусе"
+                           data-meta="Кликни сюда!"
+                           data-modal-name="privilege-vip"
+                        >
+                            <div class="donate-card__sale">
+                                <span class="donate-card__sale-text">СКИДКА 25%</span>
+                            </div>
+                            <img src="images/privilege/vip.png" alt
+                                 class="donate-card__icon">
+                            <h3 class="donate-card__title">
+                                VIP
+                            </h3>
+                            <p class="donate-card__price">
+                                <span class="donate-card__price-strike">
+                                    150 <i class="currency currency_size-24"></i>
+                                </span>
+                                70 <i class="currency currency_size-24"></i>
+                            </p>
+                            <hr class="privilege__features-separator">
+                            <ul class="privilege__features-list">
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        +4
+                                    </span>
+                                    регионов по
+                                    <br>
+                                    <span class="privilege__features-list-mark">
+                                        150
+                                    </span>
+                                    тысяч блоков и
+                                    <br>
+                                    <span class="privilege__features-list-mark">
+                                        +6
+                                    </span>
+                                    полезных флагов
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        +9
+                                    </span>
+                                    игровых команд
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    Доступен
+                                    <span class="privilege__features-list-mark">плащ</span>
+                                </li>
+                                <li class="privilege__features-list-item">
+                                    <span class="privilege__features-list-mark">
+                                        /kit VIP
+                                    </span>
+                                    <br>
+                                    <span class="privilege__features-list-mark">
+                                        /kit BUILD
+                                    </span>
+                                    <br>
+                                    наборы ресурсов
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="donate__list-item">
+                        <a href="#"
+                           class="btn
+                                  donate-card
+                                  modal-trigger
+                                  tooltip-trigger"
+                           data-title="Подробнее о статусе"
+                           data-meta="Кликни сюда!"
+                           data-modal-name="privilege-fly"
+                        >
+                            <div class="donate-card__sale">
+                                <span class="donate-card__sale-text">СКИДКА 25%</span>
+                            </div>
+                            <img src="images/privilege/unknown.png" alt
+                                 class="donate-card__icon">
+                            <h3 class="donate-card__title">
+                                FLY
+                            </h3>
+                            <p class="donate-card__price">
+                                <span class="donate-card__price-strike">
+                                    100 <i class="currency currency_size-24"></i>
+                                </span>
+                                50 <i class="currency currency_size-24"></i>
+                            </p>
+                            <hr class="privilege__features-separator">
+                            <ul class="privilege__features-list">
+                                <li class="privilege__features-list-item">
+                                    Доступ к команде
+                                    <span class="privilege__features-list-mark">
+                                        /fly
+                                    </span>
+                                    - включает режим полёта
+                                    <span class="privilege__features-list-mark">
+                                        без ограничений
+                                    </span>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="donate__list-item">
+                        <a href="#"
+                           class="btn
+                                  donate-card
+                                  modal-trigger
+                                  tooltip-trigger"
+                           data-title="Подробнее о статусе"
+                           data-meta="Кликни сюда!"
+                           data-modal-name="privilege-fly"
+                        >
+                            <div class="donate-card__sale">
+                                <span class="donate-card__sale-text">СКИДКА 25%</span>
+                            </div>
+                            <img src="images/privilege/unknown.png" alt
+                                 class="donate-card__icon">
+                            <h3 class="donate-card__title">
+                                GOD
+                            </h3>
+                            <p class="donate-card__price">
+                                <span class="donate-card__price-strike">
+                                    100 <i class="currency currency_size-24"></i>
+                                </span>
+                                50 <i class="currency currency_size-24"></i>
+                            </p>
+                            <hr class="privilege__features-separator">
+                            <ul class="privilege__features-list">
+                                <li class="privilege__features-list-item">
+                                    Доступ к команде
+                                    <span class="privilege__features-list-mark">
+                                        /god
+                                    </span>
+                                    - делает вас совершенно
+                                    <span class="privilege__features-list-mark">
+                                        бессмертным
+                                    </span>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="donate__list-item">
+                        <a href="#"
+                           class="btn
+                                  btn_disabled
+                                  donate-card
+                        ">
+                            <img src="images/privilege/unknown.png" alt
+                                 class="donate-card__icon">
+                        </a>
+                    </li>
+                    <li class="donate__list-item">
+                        <a href="#"
+                           class="btn
+                                  btn_disabled
+                                  donate-card
+                        ">
+                            <img src="images/privilege/unknown.png" alt
+                                 class="donate-card__icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-feed">
+        <div class="sidebar-feed__section">
+            <h3 class="sidebar-feed__section-heading">
+                Уведомлений
+                <span class="text text_style-aqua">17</span>
+            </h3>
+            <div class="sidebar-feed__notice-status
+                        sidebar-feed__notice-status_unread">
+                <div class="sidebar-feed__notice-status__icon">
+                    <span class="sidebar-feed__notice-status__counter">
+                        17
+                    </span>
+                </div>
+            </div>
+            <ul class="sidebar-feed__section-list
+                       sidebar-feed__section-list_hover-hide">
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Не следует, однако забывать, что новая модель позволяет...
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 17 июля, 18:44
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-primary
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Не следует, однако забывать, что постоянное анализ позиций, занимаемых участниками
+                        <span class="sidebar-feed__notice-meta">
+                             Получено 13 июля, 23:05
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-warning
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Идейные соображения высшего порядка, а также рамки и место...
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 13 июля, 23:05
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-danger
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Требуют от нас анализа позиций, занимаемых участниками в...
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 07 июля, 12:54
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-success
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 04 июля, 16:33
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-more
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Предыдущие уведомления
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-feed__section">
+            <h3 class="sidebar-feed__section-heading">
+                Друзей
+                <span class="text text_style-aqua">256</span>
+            </h3>
+            <ul class="sidebar-feed__section-list">
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_near
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-11.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Teme4chka</h4>
+                            <p class="sidebar-feed__friend-item__user-status">10 блоков от вас</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_near
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-12.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">_Malina1703_</h4>
+                            <p class="sidebar-feed__friend-item__user-status">56 блоков от вас</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_near
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-9.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">xxxDark12xxx</h4>
+                            <p class="sidebar-feed__friend-item__user-status">102 блока от вас</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_online
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-2.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">ImmortalLove</h4>
+                            <p class="sidebar-feed__friend-item__user-status">В сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_online
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-3.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">xAgare</h4>
+                            <p class="sidebar-feed__friend-item__user-status">В сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_online
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-5.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">TROJ</h4>
+                            <p class="sidebar-feed__friend-item__user-status">В сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-4.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">JoyereKnester</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-6.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">krabuik</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-7.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">YFoxTest2</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-8.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">No4naya_Nyasha</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-9.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Azazzzinys</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-12.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">KillerMoj</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-11.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Likeaboss</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-10.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">vonderlol</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-4.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Alexsasha93</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-5.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">geraosfrrr</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal">
+    <!-- Содержание модального окна, динамически подгружаемое через JS -->
+</div>
+<div class="tooltip" style="display: none">
+    <div class="tooltip__content">
+        <h3 class="tooltip__title">Ультра квантовая панель</h3>
+        <p class="tooltip__row">Полная хуета</p>
+        <p class="tooltip__meta">Vanilla Minecraft</p>
+    </div>
+</div>
+<script src="js/script.min.js"></script>
+</body>
+</html>

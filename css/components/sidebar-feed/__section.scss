@@ -1,0 +1,36 @@
+.sidebar-feed__section{
+  position: relative;
+  padding: 20px 0;
+  transition: .15s ease-in-out;
+  z-index: 1;
+
+  // Заголовок
+  &-heading{
+    --text-shadow-size: 4px;
+
+    font-family: MinecraftTitle, sans-serif;
+    line-height: 1.2;
+    font-size: 28px;
+    color: $white;
+    opacity: 1;
+    padding: 0 25px;
+    text-shadow: 4px 4px $white-shadow;
+    transition: .15s ease-in-out;
+  }
+
+  &-list{
+    padding: 10px 0 0;
+    list-style: none;
+    transition: .15s ease-in-out;
+
+    &_hover-hide{
+      opacity: 1;
+      max-height: 100%;
+      overflow: hidden;
+    }
+  }
+  &-item{
+    padding: 8px 25px;
+    transition: .15s ease-in-out;
+  }
+}

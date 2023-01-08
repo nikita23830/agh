@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <!-- Standard Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Site Properities -->
+    <title>SC | Боевой пропуск</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!--<link rel="icon" type="image/png" href="favicon.ico" />-->
+
+    <!-- Scripts -->
+    <!--Здесь пока ничего нет-->
+</head>
+<body class="overlay-checked">
+<div class="overlay overlay_type-battle-pass">
+    <div class="header">
+        <div class="wrapper">
+            <ul class="header-list header-list_alt">
+                <!-- Назад в главное меню -->
+                <li class="header-section">
+                    <a href="index.html"
+                       class="btn-hover
+                              header-item
+                              tooltip-trigger"
+                       data-title="Вернуться назад"
+                       data-meta="Кликни сюда!"
+                    >
+                        <img src="images/icon/menu.png"
+                             class="header-item__img" alt>
+                        Назад
+                    </a>
+
+                    <!-- Корзина -->
+                    <a href="cart.html"
+                       class="btn-hover
+                              header-item
+                              tooltip-trigger"
+                       data-title="Мои покупки"
+                       data-row="
+                                 <span class=dark-gray>Здесь пока ничего нет</span>
+                       "
+                    >
+                        <img src="images/icon/cart.png"
+                             class="header-item__img" alt>
+                        <span class="text text_style-gray">
+                            Мои покупки
+                        </span>
+                    </a>
+                </li>
+
+                <li class="header-section header-section_alt">
+                    <a href="battle-pass__index.html"
+                       class="btn-hover
+                              header-item
+                              tooltip-trigger"
+                       data-title="Боевой пропуск"
+                       data-meta="Кликни сюда!"
+                    >
+                        <img src="images/icon/stream-pass.png"
+                             class="header-item__img" alt>
+                        <span class="text text_style-white">
+                            STREAM PASS
+                        </span>
+                    </a>
+                </li>
+
+                <!-- Элемент-заполнитель -->
+                <li>
+
+                </li>
+
+                <li class="header-section">
+                    <!-- Баланс РУБЛЕЙ -->
+                    <a class="btn-hover
+                              header-item
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="Пополнить баланс"
+                       data-row="
+                                 На балансе
+                                 <span class=green>
+                                    0
+                                    <i class='currency currency_size-24'></i>
+                                 </span>
+                                 рублей
+                       "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="add-balance"
+                    >
+                        <i class="currency currency_size-32"></i>
+                        <span class="text text_style-green">0 РУБ.</span>
+                    </a>
+
+                    <!-- Баланс КОИНОВ -->
+                    <a class="btn-hover
+                              header-item
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="Обменник коинов"
+                       data-row="
+                                 На счету
+                                 <span class=gold>
+                                    7 890
+                                    <i class='currency currency_coin currency_size-24'></i>
+                                 </span>
+                                 коинов
+                       "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="coins-exchange"
+                    >
+                        <i class="currency currency_coin currency_size-32"></i>
+                        <span class="text text_style-gold">7 890</span>
+                    </a>
+
+                    <!-- Мой профиль -->
+                    <a href="profile.html"
+                       class="btn-hover
+                              header-item
+                              tooltip-trigger"
+                       data-title="Мой профиль"
+                       data-row="
+                                 <span class=dark-gray>Аккаунт:</span>
+                                 <i class='tooltip-avatar'></i>
+                                 Nebelherz
+                                 <br>
+                                 <span class=dark-gray>Игровой статус:</span>
+                                 <span class=gold>LEGEND</span>
+                       "
+                       data-meta="Кликни сюда!"
+                    >
+                        <img src="images/icon/profile.png"
+                             class="header-item__img" alt>
+                        Мой профиль
+                    </a>
+                </li>
+            </ul>
+            <div class="nav">
+                <a href="battle-pass__quests.html"
+                   class="btn
+                          nav-item
+                          nav-item_role-control
+                          tooltip-trigger"
+                   data-title="
+                   <span class=gray>Ранее:</span>
+                   Задания
+                   "
+                   data-meta="Нажми <span class=aqua>Q</span> или <span class=aqua>кликни</span>"
+                >
+                    <i class="nav-icon nav-icon_arrow-left"></i>
+                    Q
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="battle-pass__index.html"
+                           class="btn
+                                  nav-item
+                                  nav-item_checked
+                                  tooltip-trigger"
+                           data-title="<span class=gold>Боевой пропуск</span>"
+                           data-row=""
+                           data-meta="Кликни сюда!"
+                        >
+                            Боевой пропуск
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="battle-pass__quests.html"
+                           class="btn
+                                  nav-item
+                                  tooltip-trigger"
+                           data-title="Задания"
+                           data-row=""
+                           data-meta="Кликни сюда!"
+                        >
+                            Задания
+                            <i class="nav-item__icon-notify
+                                      nav-item__icon-notify_style-gold"
+                            ></i>
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#"
+                           class="btn
+                                  btn_warning
+                                  nav-item
+                                  modal-trigger
+                                  tooltip-trigger"
+                           data-title="Купить боевой пропуск"
+                           data-row=""
+                           data-meta="Кликни сюда!"
+                           data-modal-name="battle-pass__buy"
+                        >
+                            <span class="text text_style-white">Купить боевой пропуск</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="battle-pass__quests.html"
+                   class="btn
+                          nav-item
+                          nav-item_role-control
+                          tooltip-trigger"
+                   data-title="
+                   <span class=gray>Далее:</span>
+                   Задания
+                   "
+                   data-meta="Нажми <span class=aqua>E</span> или <span class=aqua>кликни</span>"
+                >
+                    E
+                    <i class="nav-icon nav-icon_arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page battle-pass">
+        <div class="wrapper">
+            <h1 class="page-heading page-heading_align-center">
+                <span class="text text_style-green">Уровень</span>
+                <span class="text text_style-gold">53</span>
+            </h1>
+            <div class="battle-pass__content">
+                <h1 class="page-heading">
+                    <span class="text text_style-gold">53</span>
+                </h1>
+                <div class="battle-pass__progress">
+
+                </div>
+                <h1 class="page-heading">
+                    <span class="text text_style-gold">54</span>
+                </h1>
+                <div></div>
+                <!--<div class="text text_style-center text_style-green">
+                    Общий опыт:
+                    <span class="text text_style-gold">12 974 </span>
+                    из
+                    <span class="text text_style-gold">49 000</span>
+                </div>-->
+                <div class="text text_style-gray">
+                    <span>
+                        Прогресс:
+                        <span class="text text_style-gold">142 026</span>
+                        из
+                        <span class="text text_style-gold">190 000 опыта</span>
+                        (<span class="text text_style-green">74%</span>)
+                    </span>
+                    <span class="text_style-right">
+                        До следующего уровня:
+                        <span class="text text_style-gold">47 974 опыта</span>
+                    </span>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <div class="battle-pass__awards
+                    scroll
+                    scroll_x
+                    scroll-trigger"
+             data-area="battle-pass__awards"
+        >
+            <ul class="battle-pass__awards-feed animate-list">
+                <li></li>
+                <li>
+                    <span class="text text_style-green">Уровень 1</span>
+                </li>
+                <li>
+                    <span class="text text_style-green">Уровень 2</span>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              btn_success
+                              battle-pass__awards-collect
+                              tooltip-trigger
+                              alert-trigger"
+                       data-title="Забрать награду"
+                       data-alert-id="cartSuccess"
+                    >
+                        Забрать
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              btn_success
+                              battle-pass__awards-collect
+                              tooltip-trigger
+                              alert-trigger"
+                       data-title="Забрать награду"
+                       data-alert-id="cartSuccess"
+                    >
+                        Забрать
+                    </a>
+                </li>
+                <li>Уровень 5</li>
+                <li>Уровень 6</li>
+                <li>Уровень 7</li>
+                <li>Уровень 8</li>
+                <li>Уровень 9</li>
+                <li>Уровень 10</li>
+                <li>Уровень 11</li>
+                <li>Уровень 12</li>
+                <li>Уровень 13</li>
+                <li>Уровень 14</li>
+                <li>Уровень 15</li>
+                <li>Уровень 16</li>
+                <li>Уровень 17</li>
+                <li>Уровень 18</li>
+                <li>Уровень 19</li>
+                <li>Уровень 20</li>
+            </ul>
+            <ul class="battle-pass__awards-feed
+                       battle-pass__awards-feed_type-default
+                       animate-list">
+                <li>
+                    Награды доступны <br> всем игрокам
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card
+                                battle-pass__awards-card_unlocked
+                                battle-pass__awards-card__overlay
+                                tooltip-trigger"
+                         data-title="Уровень 1"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=gold>3 000 <i class='currency currency_coin currency_size-24'></i></span>
+                            <br>
+                            <br>
+                            <span class=green>Награда получена</span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                3 000 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card
+                                battle-pass__awards-card_unlocked
+                                battle-pass__awards-card__overlay
+                                tooltip-trigger"
+                         data-title="Уровень 2"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            Железный меч
+                            <span class=white>1 шт.</span>
+                            <br>
+                            -
+                            Железная кирка
+                            <span class=white>1 шт.</span>
+                            <br>
+                            <br>
+                            <span class=green>Награда получена</span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-2">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/35.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/36.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card
+                                battle-pass__awards-card_unlocked
+                                tooltip-trigger"
+                         data-title="Уровень 3"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=gold>500 <i class='currency currency_coin currency_size-24'></i></span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                500 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card
+                                battle-pass__awards-card_unlocked
+                                tooltip-trigger"
+                         data-title="Уровень 4"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            Светящийся камень
+                            <span class=white>32 шт.</span>
+                            <br>
+                            -
+                            Пузырёк опыта
+                            <span class=white>32 шт.</span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-2">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/8.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">32</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/33.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">32</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 5"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=gold>1 500 <i class='currency currency_coin currency_size-24'></i></span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                1 500 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 6"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            Золотой блок
+                            <span class=white>12 шт.</span>
+                            <br>
+                            -
+                            <span class=aqua>Серебряное дерево</span>
+                            <span class=white>3 шт.</span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-2">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/6.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">12</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/14.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">3</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 7"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=blue>Лазуритовый кейс</span>
+                            <span class=white>3 шт.</span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_scale">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/case/lazuli.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">3</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 8"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            Композитный слиток
+                            <span class=white>24 шт.</span>
+                            <br>
+                            -
+                            <span class=aqua>Кристалл края</span>
+                            <span class=white>6 шт.</span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-2">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/18.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">24</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/31.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">6</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 9"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=gold>2 000 <i class='currency currency_coin currency_size-24'></i></span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                2 000 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 10"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=gold>3 000 <i class='currency currency_coin currency_size-24'></i></span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                3 000 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 11"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            Железный меч
+                            <span class=white>1 шт.</span>
+                            <br>
+                            -
+                            Железная кирка
+                            <span class=white>1 шт.</span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-2">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/35.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/36.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 12"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=gold>500 <i class='currency currency_coin currency_size-24'></i></span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                500 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 13"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            Светящийся камень
+                            <span class=white>32 шт.</span>
+                            <br>
+                            -
+                            Пузырёк опыта
+                            <span class=white>32 шт.</span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-2">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/8.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">32</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/33.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">32</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 14"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=gold>1 500 <i class='currency currency_coin currency_size-24'></i></span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                1 500 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 15"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            Золотой блок
+                            <span class=white>12 шт.</span>
+                            <br>
+                            -
+                            <span class=aqua>Серебряное дерево</span>
+                            <span class=white>3 шт.</span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-2">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/6.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">12</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/14.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">3</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 16"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=blue>Лазуритовый кейс</span>
+                            <span class=white>3 шт.</span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_scale">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/case/lazuli.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">3</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 17"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            Композитный слиток
+                            <span class=white>24 шт.</span>
+                            <br>
+                            -
+                            <span class=aqua>Кристалл края</span>
+                            <span class=white>6 шт.</span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-2">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/18.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">24</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/31.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">6</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 18"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=gold>2 000 <i class='currency currency_coin currency_size-24'></i></span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                2 000 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 19"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            Железный меч
+                            <span class=white>1 шт.</span>
+                            <br>
+                            -
+                            Железная кирка
+                            <span class=white>1 шт.</span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-2">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/35.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/36.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="battle-pass__awards-card tooltip-trigger"
+                         data-title="Уровень 20"
+                         data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <span class=gold>3 000 <i class='currency currency_coin currency_size-24'></i></span>
+                         "
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                3 000 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!---->
+            <ul class="battle-pass__awards-feed
+                       battle-pass__awards-feed_type-premium
+                       animate-list">
+                <li class="text text_style-yellow">
+                    Награды только для владельцев боевого пропуска
+                    <br>
+                    <a href="#"
+                       class="btn btn_warning btn_size-md modal-trigger"
+                       data-modal-name="battle-pass__buy">
+                        Купить боевой пропуск
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 1</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            - <span class=gold>25 000</span>
+                            <i class='currency currency_coin currency_size-24'></i>
+                            <br>
+                            - <span class=red>150</span>
+                            <i class='currency currency_size-24'></i>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                25 000 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                            <li class="text text_style-red">
+                                150 <i class="currency currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 2</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=aqua>Алмазный бур</span>
+                            <span class=white>1 шт.</span>
+                            <br>
+                            -
+                            Электрический ранец
+                            <span class=white>1 шт.</span>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-2">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/23.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/17.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 3</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            Пузырёк опыта
+                            <span class=white>64 шт.</span>
+                            <br>
+                            -
+                            Нитор
+                            <span class=white>32 шт.</span>
+                            <br>
+                            -
+                            Композитный слиток
+                            <span class=white>32 шт.</span>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-3">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/33.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">64</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/16.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">32</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/18.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">32</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 4</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=gold>Амулет</span>
+                            <span class=white>1 шт.</span>
+                            <br>
+                            -
+                            <span class=gold>Ихоровый жезл</span>
+                            <span class=white>1 шт.</span>
+                            <br>
+                            -
+                            <span class=aqua>Кристалл края</span>
+                            <span class=white>12 шт.</span>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-3">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/30.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/32.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/31.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">12</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 5</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            - <span class=gold>10 000</span>
+                            <i class='currency currency_coin currency_size-24'></i>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                10 000 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 6</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=aqua>Серебрянное дерево</span>
+                            <span class=white>9 шт.</span>
+                            <br>
+                            -
+                            Нитор
+                            <span class=white>64 шт.</span>
+                            <br>
+                            -
+                            Гиперактивный нитор
+                            <span class=white>32 шт.</span>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-3">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/14.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">9</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/16.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">64</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/29.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">32</span>
+                            </li>
+                        </ul>
+                    </a>
+
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 7</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=red>Иссушающий кейс</span>
+                            <span class=white>5 шт.</span>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_scale">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/case/wither.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">5</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 8</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            Зеркало
+                            <span class=white>5 шт.</span>
+                            <br>
+                            -
+                            <span class=gold>Ихор</span>
+                            <span class=white>5 шт.</span>
+                            <br>
+                            -
+                            <span class=gold>Ихоровая кирка</span>
+                            <span class=white>1 шт.</span>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-3">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/15.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">5</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/25.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">5</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/27.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 9</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            - <span class=gold>10 000</span>
+                            <i class='currency currency_coin currency_size-24'></i>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                15 000 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 10</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            - <span class=gold>25 000</span>
+                            <i class='currency currency_coin currency_size-24'></i>
+                            <br>
+                            - <span class=red>150</span>
+                            <i class='currency currency_size-24'></i>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                25 000 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                            <li class="text text_style-red">
+                                150 <i class="currency currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 11</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=aqua>Алмазный бур</span>
+                            <span class=white>1 шт.</span>
+                            <br>
+                            -
+                            Электрический ранец
+                            <span class=white>1 шт.</span>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-2">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/23.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/17.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 12</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            Пузырёк опыта
+                            <span class=white>64 шт.</span>
+                            <br>
+                            -
+                            Нитор
+                            <span class=white>32 шт.</span>
+                            <br>
+                            -
+                            Композитный слиток
+                            <span class=white>32 шт.</span>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-3">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/33.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">64</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/16.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">32</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/18.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">32</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 13</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=gold>Амулет</span>
+                            <span class=white>1 шт.</span>
+                            <br>
+                            -
+                            <span class=gold>Ихоровый жезл</span>
+                            <span class=white>1 шт.</span>
+                            <br>
+                            -
+                            <span class=aqua>Кристалл края</span>
+                            <span class=white>12 шт.</span>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-3">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/30.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/32.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/31.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">12</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 14</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            - <span class=gold>10 000</span>
+                            <i class='currency currency_coin currency_size-24'></i>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                10 000 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 15</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=aqua>Серебрянное дерево</span>
+                            <span class=white>9 шт.</span>
+                            <br>
+                            -
+                            Нитор
+                            <span class=white>64 шт.</span>
+                            <br>
+                            -
+                            Гиперактивный нитор
+                            <span class=white>32 шт.</span>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-3">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/14.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">9</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/16.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">64</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/29.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">32</span>
+                            </li>
+                        </ul>
+                    </a>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 16</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=red>Иссушающий кейс</span>
+                            <span class=white>5 шт.</span>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_scale">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/case/wither.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">5</span>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 17</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            Зеркало
+                            <span class=white>5 шт.</span>
+                            <br>
+                            -
+                            <span class=gold>Ихор</span>
+                            <span class=white>5 шт.</span>
+                            <br>
+                            -
+                            <span class=gold>Ихоровая кирка</span>
+                            <span class=white>1 шт.</span>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-3">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/15.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">5</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/25.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                                <span class="battle-pass__awards-grid__item-count">5</span>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/27.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 18</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            - <span class=gold>10 000</span>
+                            <i class='currency currency_coin currency_size-24'></i>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                15 000 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 19</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            -
+                            <span class=aqua>Алмазный бур</span>
+                            <span class=white>1 шт.</span>
+                            <br>
+                            -
+                            Электрический ранец
+                            <span class=white>1 шт.</span>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid battle-pass__awards-grid_column-2">
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/23.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                            <li class="battle-pass__awards-grid__item">
+                                <img src="images/shop/17.png"
+                                     class="battle-pass__awards-grid__item-img" alt>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="btn
+                              battle-pass__awards-card
+                              battle-pass__awards-card_premium
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="<span class=gold>Уровень 20</span>"
+                       data-row="
+                            <span class=dark-gray>Награда:</span>
+                            <br>
+                            - <span class=gold>25 000</span>
+                            <i class='currency currency_coin currency_size-24'></i>
+                            <br>
+                            - <span class=red>150</span>
+                            <i class='currency currency_size-24'></i>
+                            <br>
+                            <br>
+                            <span class=yellow>
+                                [<span class=gold>STREAM PASS</span>]
+                                <br>
+                                > Награда доступна <span class=gold>только для владельцев</span> боевого пропуска
+                            </span>
+                         "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="battle-pass__buy"
+                    >
+                        <ul class="battle-pass__awards-grid">
+                            <li class="text text_style-gold">
+                                25 000 <i class="currency currency_coin currency_size-48"></i>
+                            </li>
+                            <li class="text text_style-red">
+                                150 <i class="currency currency_size-48"></i>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sidebar-feed">
+        <div class="sidebar-feed__section">
+            <h3 class="sidebar-feed__section-heading">
+                Уведомлений
+                <span class="text text_style-aqua">17</span>
+            </h3>
+            <div class="sidebar-feed__notice-status
+                        sidebar-feed__notice-status_unread">
+                <div class="sidebar-feed__notice-status__icon">
+                    <span class="sidebar-feed__notice-status__counter">
+                        17
+                    </span>
+                </div>
+            </div>
+            <ul class="sidebar-feed__section-list
+                       sidebar-feed__section-list_hover-hide">
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Не следует, однако забывать, что новая модель позволяет...
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 17 июля, 18:44
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-primary
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Не следует, однако забывать, что постоянное анализ позиций, занимаемых участниками
+                        <span class="sidebar-feed__notice-meta">
+                             Получено 13 июля, 23:05
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-warning
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Идейные соображения высшего порядка, а также рамки и место...
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 13 июля, 23:05
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-danger
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Требуют от нас анализа позиций, занимаемых участниками в...
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 07 июля, 12:54
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-success
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 04 июля, 16:33
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-more
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Предыдущие уведомления
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-feed__section">
+            <h3 class="sidebar-feed__section-heading">
+                Друзей
+                <span class="text text_style-aqua">256</span>
+            </h3>
+            <ul class="sidebar-feed__section-list">
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_near
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-11.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Teme4chka</h4>
+                            <p class="sidebar-feed__friend-item__user-status">10 блоков от вас</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_near
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-12.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">_Malina1703_</h4>
+                            <p class="sidebar-feed__friend-item__user-status">56 блоков от вас</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_near
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-9.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">xxxDark12xxx</h4>
+                            <p class="sidebar-feed__friend-item__user-status">102 блока от вас</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_online
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-2.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">ImmortalLove</h4>
+                            <p class="sidebar-feed__friend-item__user-status">В сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_online
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-3.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">xAgare</h4>
+                            <p class="sidebar-feed__friend-item__user-status">В сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_online
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-5.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">TROJ</h4>
+                            <p class="sidebar-feed__friend-item__user-status">В сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-4.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">JoyereKnester</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-6.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">krabuik</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-7.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">YFoxTest2</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-8.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">No4naya_Nyasha</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-9.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Azazzzinys</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-12.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">KillerMoj</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-11.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Likeaboss</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-10.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">vonderlol</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-4.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Alexsasha93</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-5.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">geraosfrrr</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal">
+    <!-- Содержание модального окна, динамически подгружаемое через JS -->
+</div>
+<div class="tooltip" style="display: none">
+    <div class="tooltip__content">
+        <h3 class="tooltip__title">Заголовок</h3>
+        <p class="tooltip__row">Описание</p>
+        <p class="tooltip__meta">Модификация</p>
+    </div>
+</div>
+<script src="js/script.min.js"></script>
+</body>
+</html>

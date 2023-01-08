@@ -1,0 +1,151 @@
+.tooltip{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: .9999;
+  box-shadow: 0 5px 25px 5px transparentize(#000,.4);
+  pointer-events: none;
+  z-index: 9999;
+
+  // tooltip-trigger предназначен JS-обработчику
+  // для отображения тултипа и компонента, имеющего этот класс
+  &-trigger{
+    // У всех внутренних элементов отключить события мыши
+    *{
+      pointer-events: none;
+    }
+  }
+
+  // Основной контейнер с содержимым
+  &__content{
+    background: var(--gray-900);
+    border: 6px solid darken($blue,55%);
+    padding: 8px;
+    line-height: 1.4;
+    font-size: 16px;
+    color: $gray;
+    text-shadow: 2px 2px $gray-shadow;
+    @include bordered(#030303, 8);
+    text-align: left;
+  }
+
+  // Заголовок // data-title
+  &__title{
+    font-weight: normal;
+    font-size: 18px;
+    color: $aqua;
+    text-shadow: 2px 2px $aqua-shadow;
+  }
+
+  // Описание // data-row
+  p{
+    max-width: 320px;
+  }
+
+  // Изображения
+  img{
+    width: 100%;
+  }
+
+  // Последняя строчка // data-meta
+  &__meta{
+    color: $blue;
+    text-shadow: 2px 2px $blue-shadow;
+  }
+
+  // Обёртка для Изменение цвета фрагмента текста
+  span{
+    --color: inherit;
+    --shadow: inherit;
+    color: var(--color);
+    text-shadow: 2px 2px var(--shadow);
+  }
+
+  // Индикатор прогресса
+  &__progress{
+    // Основной контейнер
+    &-bar{
+      // По-умолчанию размер шага - 100%
+      --step: 0.5;
+
+      display: block;
+      position: relative;
+      background: $dark-gray-shadow;
+      margin: 5px 0;
+      padding: 5px;
+      height: 18px;
+
+      // Модификатор количества шагов
+      &_step{
+        &-3{
+          --step: 3;
+        }
+        &-5{
+          --step: 5;
+        }
+        &-7{
+          --step: 7;
+        }
+        &-10{
+          --step: 10;
+        }
+        &-16{
+          --step: 16;
+        }
+        &-25{
+          --step: 25;
+        }
+      }
+
+      &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        background: linear-gradient(
+                        to right,
+                        $dark-gray-shadow 3px,
+                        transparent 3px
+        ) repeat-x;
+        background-size: calc(100% / var(--step));
+        width: calc(100% - 7px);
+        height: calc(100% - 10px);
+        top: 5px;
+        left: 2px;
+      }
+    }
+    // Внутренняя полоса прогресса
+    &-line{
+      display: block;
+      background: $gold;
+      height: 100%;
+      width: 0;
+    }
+  }
+
+  // Разделитель
+  hr{
+    display: block;
+    border: none;
+    height: 0;
+    margin: 8px 0;
+  }
+
+  // Аватар (голова) игрока
+  &-avatar{
+    display: inline-block;
+    background: url('#{$url}heads/head-3.png') no-repeat center bottom;
+    background-size: 24px;
+    height: 24px;
+    width: 24px;
+    vertical-align: top;
+  }
+
+  // Инициализация модификаторов со всей палитрой
+  @each $value in $colors-map {
+    .#{$value}{
+      --color: var(--#{$value});
+      --shadow: var(--#{$value}-shadow);
+    }
+  }
+}

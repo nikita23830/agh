@@ -1,0 +1,89 @@
+// Имитация интерфейса
+.inventory{
+  --width: 654px;
+  --columns: 12;
+  --color-title: #{$dark-gray};
+
+  width: var(--width);
+  padding: 20px 15px 25px;
+  margin: auto;
+
+  // Модификаторы размера
+  &_columns-9{
+    --width: 498px;
+    --columns: 9;
+  }
+  &_columns-6{
+    --width: 342px;
+    --columns: 6;
+  }
+
+  // Модификатор недоступного состояния
+  &_disabled{
+    --color-title: var(--gray-400);
+  }
+
+  // Заголвок
+  &-title{
+    font-size: 18px;
+    color: var(--color-title);
+    margin: 0 0 10px;
+    text-align: left;
+  }
+
+  // Сетка
+  &-grid{
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 52px);
+
+    position: relative;
+    list-style: none;
+
+    &__overlay{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $black;
+      opacity: .6;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+
+  // Ячейка
+  &-cell{
+    --background: var(--gray-400);
+    --background-hover: var(--gray-200);
+
+    position: relative;
+    background: var(--background);
+    width: 52px;
+    height: 52px;
+    padding: 5px;
+    box-shadow:
+            inset 3px 3px $dark-gray,
+            inset -3px -3px $white;
+
+    &:hover{
+      background: var(--background-hover);
+    }
+
+    // Иконка предмета
+    &__icon{
+      width: 42px;
+      height: 42px;
+      image-rendering: pixelated;
+    }
+    // Количество предмета
+    &__count{
+      position: absolute;
+      font-size: 18px;
+      color: $white;
+      right: 0;
+      bottom: 3px;
+      text-shadow: 3px 3px $white-shadow;
+    }
+  }
+}

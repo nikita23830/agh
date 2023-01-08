@@ -1,0 +1,182 @@
+.index{
+  --grid-footer: 320px 356px 320px;
+
+  &_grid-4{
+    --grid-footer: 320px 152px 320px;
+  }
+  &_grid-5{
+    --grid-footer: auto 1fr auto;
+  }
+  &_grid-6{
+    --grid-footer: auto 1fr auto;
+  }
+
+  .wrapper{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 35px;
+  }
+
+  // Группа кнопок
+  &-group{
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    grid-template-rows: 276px;
+    justify-content: center;
+    grid-gap: 24px;
+
+    &_grid-4{
+      grid-template-columns: repeat(4, 180px);
+    }
+    &_grid-5{
+      grid-template-columns: repeat(5, 180px);
+    }
+    &_grid-6{
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    // Кнопка в меню
+    &__btn{
+      --background: #{alpha($black, .5)};
+      --border: var(--background);
+      --value: 8px;
+      --value-reverse: -8px;
+
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 112px auto;
+      align-items: start;
+      grid-gap: 25px;
+
+      position: relative;
+      line-height: 1.5;
+      font-size: 18px;
+      padding: 45px 15px;
+
+      @include bordered(var(--border), 8);
+
+      // Модификатор цвета
+      &_style{
+        // По цветам
+        &-blue{
+          --border: #{$blue};
+        }
+        &-green{
+          --border: #{$green};
+        }
+        &-gold{
+          --border: #{$gold};
+        }
+        &-violet{
+          --background: #{$light-purple};
+        }
+        &-red{
+          --border: #{$dark-red};
+        }
+      }
+
+      // Модификатор по назначению
+      &_role{
+        // Кнопка боевого пропуска
+        &-battle-pass{
+          --background: #{$gold};
+        }
+        // Кнопка выхода с сервера
+        &-exit{
+          //--background: #{alpha($red-shadow, .5)};
+          --color: var(--red);
+          --text-shadow: var(--red-shadow);
+        }
+      }
+
+      // Модификаторы внутренней сетки
+      &_grid{
+        // Боевой пропуск
+        &-battle-pass{
+          &::after{
+            content:'';
+            display: block;
+            position: absolute;
+            background: url('#{$url}/icon/battle-pass.png') no-repeat center -32px;
+            background-size: 320px;
+            width: calc(100% + 14px);
+            height: calc(100% + 14px);
+            top: -7px;
+            left: -7px;
+            image-rendering: pixelated;
+          }
+        }
+        // Горизонтальное расположение
+        &-inline{
+          grid-template-columns: auto 1fr;
+          grid-template-rows: auto;
+          align-items: center;
+          grid-gap: 15px;
+          padding: 5px 25px;
+
+          .index-menu__group__btn-img{
+            width: 48px;
+            margin: 0;
+          }
+        }
+      }
+
+      // Мерцающий сплэщ
+      &-splash{
+        position: absolute;
+        font-size: 20px;
+        color: var(--yellow);
+        top: 10px;
+        left: -45px;
+        transform: rotate(-30deg);
+        transform-origin: center center;
+        animation: index-group__btn-splash 1s ease-in-out infinite;
+        text-shadow: 3px 3px var(--yellow-shadow);
+        z-index: 2;
+
+        @keyframes index-group__btn-splash{
+          0%, 100%{
+            transform: rotate(-30deg) scale(1);
+          }
+          50%{
+            transform: rotate(-30deg) scale(1.5);
+          }
+        }
+      }
+
+      // Иконка в кнопке
+      &-icon{
+        display: block;
+        height: 112px;
+        margin: 0 auto;
+        image-rendering: pixelated;
+
+        // Модификатор для отключения эффекта пикселизации иконок
+        &_smoothed{
+          image-rendering: initial;
+        }
+
+        // Модификатор для уменьшенной версии иконок
+        &_scaled{
+          height: 48px;
+          margin: 0;
+        }
+      }
+
+      // Текст кнопки
+      &-text{
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+
+  // Футер
+  &-footer{
+    display: grid;
+    grid-template-columns: repeat(2, 384px);
+    justify-content: center;
+    grid-gap: 25px;
+  }
+}

@@ -1,0 +1,43 @@
+// Редкое свойство для отключеия размытия пиксельных картинок
+@mixin pixelated{
+  image-rendering: pixelated;
+}
+
+// Сокращение записи для обозначения альфа-канала
+@function alpha($color, $value) {
+  @return transparentize($color, 1 - $value);
+}
+
+// Выступающая рамка по краям
+@mixin bordered($color, $width: 5, $custom: 0 0){
+  box-shadow:
+          $custom,
+          0 (-$width)+px $color,
+          0 $width+px $color,
+          (-$width)+px 0 $color,
+          $width+px 0 $color;
+}
+
+// Инициализация размытия заднего фона
+@mixin background-blur-init($blur: 15px) {
+
+  // Проверка на опцию ВКЛ / ВЫКЛ блюра фона
+  @if ($background-blur) {
+    backdrop-filter: blur($blur);
+    -webkit-backdrop-filter: blur($blur);
+  }
+}
+
+@mixin btn-var-init($color, $shadow: $black){
+  --background: #{$color};
+  --border-top: #{lighten($color, 10)};
+  --border-middle: #{darken($color, 8)};
+  --border-bottom: #{darken($color, 16)};
+}
+
+@mixin windowConfig($style){
+  --background: #{$style};
+  --border: #{$black};
+  --light: #{lighten($style, 15%)};
+  --shadow: #{desaturate(darken($style, 45%), 45%)};
+}

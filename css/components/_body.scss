@@ -1,0 +1,62 @@
+// Основной родитель
+body{
+  --image: #{url('../images/game/1.png')};
+  --text-shadow-size: 2px;
+
+  position: relative;
+  min-width: 1400px;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+
+  // Задний фон с "симуляцией" игры
+  &::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background:
+            $dark-gray-shadow
+            var(--image)
+            no-repeat
+            center bottom;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  // Стиль, открывающий (инициализирующий) #overlay
+  &.overlay-checked{
+    .overlay{
+      opacity: 1;
+    }
+    .main-menu{
+      left: 0;
+      pointer-events: visible;
+    }
+    .character{
+      transform: translateY(0);
+    }
+  }
+
+  // Класс, инициализирующий модальное окно .modal
+  &.modal-checked{
+    .modal{
+      opacity: 1;
+      pointer-events: all;
+
+      &__content{
+        transform: scale(1);
+      }
+    }
+  }
+
+  // Костыль для игнорирования JS'ом всплывающих подсказок
+  &:not(.overlay-checked){
+    .tooltip-trigger{
+      pointer-events: none;
+    }
+  }
+}

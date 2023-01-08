@@ -1,0 +1,69 @@
+.header{
+  position: relative;
+  width: 100%;
+  color: $white;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  // Инициализация шрифта
+  *{
+    font-family: MinecraftTitle, sans-serif;
+  }
+
+  // Контейнер раздела
+  .wrapper{
+    max-width: 100%;
+  }
+
+  // Сетка списка навигации в шапке
+  &-list{
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 15px;
+
+    padding: 15px 0 0;
+    list-style: none;
+
+    &_alt {
+      grid-template-columns: auto auto 1fr auto;
+    }
+  }
+
+  &-section{
+    --border: #{alpha($white, .15)};
+    --background: #{alpha($black, .3)};
+
+    font-size: 0;
+    @include bordered(var(--border));
+    white-space: nowrap;
+
+    &_alt{
+      --border: #{$gold};
+      --background: #{alpha($dark-red, .7)};
+    }
+  }
+
+  // Элемент навигации в шапке
+  &-item{
+    display: inline-block;
+    background: var(--background);
+    line-height: 32px;
+    font-size: 16px;
+    padding: 5px 15px;
+
+    &:not(:first-child){
+      margin-left: 5px;
+      box-shadow: -5px 0 var(--border);
+    }
+
+    // Превью элемента
+    &__img{
+      height: 32px;
+      margin: 0 5px 0 0;
+      image-rendering: pixelated;
+      vertical-align: top;
+    }
+  }
+}

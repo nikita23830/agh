@@ -1,0 +1,327 @@
+// Содержимое кейса
+.case{
+  // Заголвок
+  &-title{
+    font-size: 24px;
+    color: $white;
+    margin: 0 0 25px;
+    text-shadow: 3px 3px $white-shadow;
+  }
+
+  &__help-tip{
+    --background: #{alpha($white, .1)};
+
+    display: block;
+    position: absolute;
+    background: var(--background);
+    width: 48px;
+    height: 48px;
+    top: 32px;
+    right: 10px;
+    padding: 2px;
+    @include bordered(var(--background));
+    z-index: 1;
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // Сетка
+  &-contains{
+    --card-size: 58px;
+    --column: 9;
+    --count-size: 18px;
+
+    display: grid;
+    grid-template-columns: repeat(var(--column), var(--card-size));
+    grid-gap: 15px;
+    align-items: center;
+    list-style: none;
+
+    &_alt{
+      --card-size: 149px;
+      --column: 4;
+    }
+  }
+
+  // Ячейка
+  &-item{
+    --background: var(--gray-400);
+    --background-hover: var(--gray-200);
+
+    position: relative;
+    background: var(--background);
+    width: var(--card-size);
+    height: var(--card-size);
+    padding: 5px;
+    @include bordered(var(--background));
+
+    // Состояние наведения
+    &:hover{
+      --background: var(--background-hover);
+      background: var(--background-hover);
+    }
+
+    // Модификатор редкости кейса
+    &_rare{
+      // Обычный
+      &-0{
+        --background: #{alpha($green, .5)};
+        --background-hover: #{alpha($green, .8)};
+      }
+
+      // Редкий
+      &-1{
+        --background: #{alpha($blue, .7)};
+        --background-hover: #{$blue};
+      }
+
+      // Мифический
+      &-2{
+        --background: #{alpha($dark-purple, .7)};
+        --background-hover: #{$dark-purple};
+      }
+
+      // Экзотический
+      &-3{
+        --background: #{alpha($dark-red, .7)};
+        --background-hover: #{$dark-red};
+      }
+
+      // Легендарный
+      &-4{
+        --background: #{alpha($gold, .7)};
+        --background-hover: #{$gold};
+      }
+
+      // Привилегия
+      &-privilege{
+        padding: 0;
+
+        .case-item__icon{
+          width: var(--card-size);
+          height: var(--card-size);
+        }
+      }
+    }
+
+    // Иконка предмета
+    &__icon{
+      width: calc(var(--card-size) - 10px);
+      height: calc(var(--card-size) - 10px);
+      pointer-events: none!important;
+      image-rendering: pixelated;
+    }
+    // Количество предмета
+    &__count{
+      position: absolute;
+      font-size: var(--count-size);
+      color: $white;
+      right: 0;
+      bottom: 3px;
+      text-shadow: 3px 3px $white-shadow;
+    }
+  }
+
+  // Открытие кейса
+  &-open{
+    padding: 25px 0 50px;
+
+    //
+    &_drop{
+      padding: 50px 0;
+
+      //
+      &__area{
+        background: var(--image) top center;
+        background-size: 80px;
+        padding: 0 0 5px;
+        margin: 25px 0;
+        image-rendering: pixelated;
+      }
+
+      //
+      &__icon{
+        position: relative;
+        margin: 0 auto 15px;
+        padding: 25px;
+        width: 190px;
+        height: 190px;
+        text-align: center;
+
+        //
+        &-item{
+          width: 140px;
+          height: 140px;
+        }
+
+        &-count{
+          position: absolute;
+          bottom: 25px;
+          right: 15px;
+          font-size: 48px;
+          text-shadow: 6px 6px $white-shadow;
+        }
+      }
+    }
+
+    // Заголовок открытия кейса
+    &__heading{
+      --color: #{$white};
+      --text-shadow: #{$white-shadow};
+
+      font-size: 32px;
+
+      // Цветовое выделение для названия кейса или предмета
+      &-name{
+        font-family: inherit;
+        color: var(--color);
+        text-shadow: 4px 4px var(--text-shadow);
+
+        // Модификатора цвета
+        &_style{
+          &-gold{
+            --color: #{$gold};
+            --text-shadow: #{$gold-shadow};
+          }
+          &-red{
+            --color: #{$red};
+            --text-shadow: #{$red-shadow};
+          }
+          &-aqua{
+            --color: #{$aqua};
+            --text-shadow: #{$aqua-shadow};
+          }
+          &-blue{
+            --color: #{$blue};
+            --text-shadow: #{$blue-shadow};
+          }
+          &-green{
+            --color: #{$green};
+            --text-shadow: #{$green-shadow};
+          }
+          &-dark-purple{
+            --color: #{$dark-purple};
+            --text-shadow: #{$dark-purple-shadow};
+          }
+        }
+      }
+
+      // Тег с указанием редкости
+      &-tag{
+        display: inline-block;
+        background: var(--color);
+        font-family: inherit;
+        font-size: 20px;
+        padding: 5px 10px;
+        margin: 10px 0;
+        box-shadow: 5px 5px var(--text-shadow);
+        text-shadow: 2px 2px $white-shadow;
+
+        // Модификатора цвета
+        &_style{
+          &-gold{
+            --color: #{$gold};
+            --text-shadow: #{$gold-shadow};
+          }
+          &-red{
+            --color: #{$red};
+            --text-shadow: #{$red-shadow};
+          }
+          &-light-purple{
+            --color: #{$light-purple};
+            --text-shadow: #{$light-purple-shadow};
+          }
+          &-green{
+            --color: #{$dark-green};
+            --text-shadow: #{$dark-green-shadow};
+          }
+          &-blue{
+            --color: #{$blue};
+            --text-shadow: #{$blue-shadow};
+          }
+        }
+      }
+    }
+
+    // Полоса пропкрутки предметов
+    &__scrolling-wrapper{
+      position: relative;
+      margin: 10px 0 15px;
+      padding: 25px 0;
+      height: 126px;
+
+      // Рестайлинг компонентов у содержимого кейса
+      .case-contains{
+        --card-size: 80px;
+        --count-size: 24px;
+        --width: 1727px;
+        --column: 18;
+
+        position: absolute;
+        top: 15px;
+        width: var(--width);
+        padding: 0 12px;
+        animation: case-scrolling 2s linear infinite;
+
+        // Переменная со значением стартовой позиции для анимации прокрутки
+        &_scroll{
+          &-1{
+            --position: var(--width);
+          }
+          &-2{
+            --position: 0px;
+          }
+          &-3{
+            --position: calc(var(--width) * -1);
+          }
+        }
+
+        // Анимирование прокрутки содержимого кейса
+        @keyframes case-scrolling{
+          0%{
+            right: var(--position);
+          }
+          100%{
+            right: calc(var(--position) + var(--width));
+          }
+        }
+      }
+
+      // Изменение размера элемента с привилегией
+      .case-item_rare-privilege{
+        --card-size: 96px;
+      }
+
+      // Декоративный элемент, который указывает на выпавший предмет
+      &__cursor{
+        display: block;
+        position: absolute;
+        background: url('#{$url}gui/cursor.png') no-repeat center;
+        background-size: 48px;
+        width: 48px;
+        height: 48px;
+        top: 0;
+        left: calc(50% - 24px);
+        animation: cursor-rotate .15s infinite;
+        transform-origin: center top;
+        image-rendering: pixelated;
+        z-index: 1;
+
+        // Анимация "подёргивания" указателя при прокрутке
+        // Создаётся эффект, как будто указатель ударяется
+        // О пролетающие карточки в полосе прокрутки
+        @keyframes cursor-rotate{
+          0%{
+            transform: rotate(0);
+          }
+          100%{
+            transform: rotate(35deg);
+          }
+        }
+      }
+    }
+  }
+}

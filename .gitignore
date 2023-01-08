@@ -1,0 +1,13 @@
+# Catalogs
+.idea
+.git
+.sass-cache
+temp
+node_modules
+# Files
+*.map
+style.css
+gruntfile.js
+package.json
+package-lock.json
+{

@@ -1,0 +1,2166 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <!-- Standard Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Site Properities -->
+    <title>SC | Рейтинг игроков</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!--<link rel="icon" type="image/png" href="favicon.ico" />-->
+
+    <!-- Scripts -->
+    <!--Здесь пока ничего нет-->
+</head>
+<body class="overlay-checked">
+<div class="overlay">
+    <div class="header">
+        <div class="wrapper">
+            <ul class="header-list">
+                <!-- Назад в главное меню -->
+                <li class="header-section">
+                    <a href="index.html"
+                       class="btn-hover
+                              header-item
+                              tooltip-trigger"
+                       data-title="Вернуться назад"
+                       data-meta="Кликни сюда!"
+                    >
+                        <img src="images/icon/menu.png"
+                             class="header-item__img" alt>
+                        Назад
+                    </a>
+
+                    <!-- Корзина -->
+                    <a href="cart.html"
+                       class="btn-hover
+                              header-item
+                              tooltip-trigger"
+                       data-title="Мои покупки"
+                       data-row="
+                                 <span class=dark-gray>Здесь пока ничего нет</span>
+                       "
+                    >
+                        <img src="images/icon/cart.png"
+                             class="header-item__img" alt>
+                        <span class="text text_style-gray">
+                            Мои покупки
+                        </span>
+                    </a>
+                </li>
+
+                <!-- Элемент-заполнитель -->
+                <li>
+
+                </li>
+
+                <li class="header-section">
+                    <!-- Баланс РУБЛЕЙ -->
+                    <a class="btn-hover
+                              header-item
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="Пополнить баланс"
+                       data-row="
+                                 На балансе
+                                 <span class=green>
+                                    0
+                                    <i class='currency currency_size-24'></i>
+                                 </span>
+                                 рублей
+                       "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="add-balance"
+                    >
+                        <i class="currency currency_size-32"></i>
+                        <span class="text text_style-green">0 РУБ.</span>
+                    </a>
+
+                    <!-- Баланс КОИНОВ -->
+                    <a class="btn-hover
+                              header-item
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="Обменник коинов"
+                       data-row="
+                                 На счету
+                                 <span class=gold>
+                                    7 890
+                                    <i class='currency currency_coin currency_size-24'></i>
+                                 </span>
+                                 коинов
+                       "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="coins-exchange"
+                    >
+                        <i class="currency currency_coin currency_size-32"></i>
+                        <span class="text text_style-gold">7 890</span>
+                    </a>
+
+                    <!-- Мой профиль -->
+                    <a href="profile.html"
+                       class="btn-hover
+                              header-item
+                              tooltip-trigger"
+                       data-title="Мой профиль"
+                       data-row="
+                                 <span class=dark-gray>Аккаунт:</span>
+                                 <i class='tooltip-avatar'></i>
+                                 Nebelherz
+                                 <br>
+                                 <span class=dark-gray>Игровой статус:</span>
+                                 <span class=light-purple>Deluxe</span>
+                       "
+                       data-meta="Кликни сюда!"
+                    >
+                        <img src="images/icon/profile.png"
+                             class="header-item__img" alt>
+                        Мой профиль
+                    </a>
+                </li>
+            </ul>
+            <div class="nav">
+                <a href="stats.html"
+                   class="btn
+                          nav-item
+                          nav-item_role-control
+                          tooltip-trigger"
+                   data-title="
+                   <span class=gray>Ранее:</span>
+                   <span class=green>Статистика</span>
+                   "
+                   data-meta="Нажми <span class=aqua>Q</span> или <span class=aqua>кликни</span>"
+                >
+                    <i class="nav-icon nav-icon_arrow-left"></i>
+                    Q
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="profile.html"
+                           class="btn
+                                  nav-item
+                                  tooltip-trigger"
+                           data-title="Мой профиль"
+                           data-row="
+                                 <span class=dark-gray>Аккаунт:</span>
+                                 <i class='tooltip-avatar'></i>
+                                 Nebelherz
+                                 <br>
+                                 <span class=dark-gray>Игровой статус:</span>
+                                 <span class=light-purple>Deluxe</span>
+                       "
+                           data-meta="Кликни сюда!"
+                        >
+                            Мой профиль
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="personalization.html"
+                           class="btn
+                                  nav-item
+                                  tooltip-trigger"
+                           data-title="Изменить внешность"
+                           data-row="Добавь изюминки своего персонажу — <span class=white>крылья</span>, <span class=white>шляпы</span>, <span class=white>питомцы</span> и многое другое!"
+                           data-meta="Кликни сюда!"
+                        >
+                            Изменить внешность
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="achievements.html"
+                           class="btn
+                                  nav-item
+                                  tooltip-trigger"
+                           data-title="<span class=gold>Достижения</span>"
+                           data-row="
+                                     <span class=dark-gray>Завершено:</span>
+                                     <span class=aqua>1 из 37 категорий</span>
+                                     <br>
+                                     <span class=dark-gray>Открыто:</span>
+                                     <span class=green>87 достижений</span>
+                                     <hr>
+                                     <span class=gold>Общий прогресс:</span>
+                                     <span class=white>7%</span>
+                                     <span class='tooltip__progress-bar'>
+                                         <span class='tooltip__progress-line' style='width: 7%'></span>
+                                     </span>
+                           "
+                           data-meta="Кликни сюда!"
+                        >
+                            Достижения
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="stats.html"
+                           class="btn
+                                  nav-item
+                                  tooltip-trigger"
+                           data-title="<span class=green>Статистика</span>"
+                           data-row="Время в игре, поставлено или создано блоков - <span class=gold>всё здесь</span>!"
+                           data-meta="Кликни сюда!"
+                        >
+                            Статистика
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="ratings.html"
+                           class="btn
+                                  nav-item
+                                  nav-item_checked
+                                  tooltip-trigger"
+                           data-title="Рейтинги игроков"
+                           data-row="Соревнуйтесь с другими игроками за <span class=green>первенство</span>!"
+                           data-meta="Кликни сюда!"
+                        >
+                            Рейтинги
+                        </a>
+                    </li>
+                </ul>
+                <a href="profile.html"
+                   class="btn
+                          nav-item
+                          nav-item_role-control
+                          tooltip-trigger"
+                   data-title="
+                   <span class=gray>Далее:</span>
+                   Мой профиль
+                   "
+                   data-meta="Нажми <span class=aqua>E</span> или <span class=aqua>кликни</span>"
+                >
+                    E
+                    <i class="nav-icon nav-icon_arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper wrapper_fixed">
+        <!-- Переключатель вкладок (рейтингов) -->
+        <ul class="ratings-nav ratings-nav_grid-6">
+            <li>
+                <button class="btn ratings-nav__item ratings-nav__item_checked"
+                        data-rating="kill">
+                    <img src="images/icon/rating-kills.png"
+                         class="ratings-nav__item-img" alt>
+                    Убитые игроки
+                </button>
+            </li>
+            <li>
+                <button class="btn ratings-nav__item"
+                        data-rating="time">
+                    <img src="images/icon/rating-time.png"
+                         class="ratings-nav__item-img" alt>
+                    Время в игре
+                </button>
+            </li>
+            <li>
+                <button class="btn ratings-nav__item"
+                        data-rating="coins">
+                    <img src="images/icon/rating-coins.png"
+                         class="ratings-nav__item-img" alt>
+                    Баланс в коинах
+                </button>
+            </li>
+            <li>
+                <button class="btn ratings-nav__item"
+                        data-rating="rubles">
+                    <img src="images/icon/rating-rubles.png"
+                         class="ratings-nav__item-img" alt>
+                    Баланс в рублях
+                </button>
+            </li>
+            <li>
+                <button class="btn ratings-nav__item"
+                        data-rating="kill">
+                    <img src="images/icon/rating-kills.png"
+                         class="ratings-nav__item-img" alt>
+                    Убитые игроки
+                </button>
+            </li>
+            <li>
+                <button class="btn ratings-nav__item"
+                        data-rating="time">
+                    <img src="images/icon/rating-time.png"
+                         class="ratings-nav__item-img" alt>
+                    Время в игре
+                </button>
+            </li>
+        </ul>
+        <div class="ratings-search">
+            <label class="btn btn_size-sm form-control">
+                <span class="form-control__text">Поиск:</span>
+                <input class="form-control__input
+                                          form-control__input_placeholder-invert" placeholder="Введите ник игрока">
+            </label>
+            <br>
+            <a href="ratings.html"
+               class="btn
+                      btn_secondary
+                      btn_size-sm"
+            >
+                Сбросить результаты
+            </a>
+        </div>
+    </div>
+    <div class="page ratings">
+        <div class="wrapper">
+            <!-- Содержание рейтинга -->
+            <ul class="ratings__tab-list">
+                <!-- Убитые игроки -->
+                <li class="ratings__tab-item ratings__tab-item_checked"
+                    data-rating="kill"
+                >
+                    <ol class="ratings__table">
+                        <li>
+                            <h2 class="ratings__tab-heading">Ваша позиция в рейтинге:</h2>
+                            <a href="profile.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-own"
+                               data-type="skip"
+                            >
+                                <span class="ratings__table-data__rank"># 499</span>
+                                <span>
+                                    <img src="images/heads/head-3.png"
+                                         class="ratings__table-data__img" alt>
+                                    Nebelherz
+                                </span>
+                                <span>5 213 </span>
+                                <span>7 565 </span>
+                            </a>
+                        </li>
+                    </ol>
+                    <!---->
+                    <!---->
+                    <ol class="ratings__table animate-list">
+                        <li class="ratings__table-row ratings__table-row_type-header"
+                            data-type="skip">
+                            <span>Место</span>
+                            <span>Игрок</span>
+                            <span>Убийств</span>
+                            <span>Смертей</span>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-top
+                               ratings__table-row_type-top-1"
+                            >
+                                <span class="ratings__table-data__rank"># 1</span>
+                                <span>
+                                    <img src="images/heads/head-1.png"
+                                         class="ratings__table-data__img" alt>
+                                    Swamply
+                                </span>
+                                <span>15 833 </span>
+                                <span>4 845 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-top
+                               ratings__table-row_type-top-2"
+                            >
+                                <span class="ratings__table-data__rank"># 2</span>
+                                <span>
+                                    <img src="images/heads/head-2.png"
+                                         class="ratings__table-data__img" alt>
+                                    Mine03
+                                </span>
+                                <span>14 932 </span>
+                                <span>11 734 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-top
+                               ratings__table-row_type-top-3"
+                            >
+                                <span class="ratings__table-data__rank"># 3</span>
+                                <span>
+                                    <img src="images/heads/head-3.png"
+                                         class="ratings__table-data__img" alt>
+                                    DarthSidi0us
+                                </span>
+                                <span>10 745 </span>
+                                <span>2 091 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 4</span>
+                                <span>
+                                    <img src="images/heads/head-4.png"
+                                         class="ratings__table-data__img" alt>
+                                    Deadp00l
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 5</span>
+                                <span>
+                                    <img src="images/heads/head-5.png"
+                                         class="ratings__table-data__img" alt>
+                                    LimeWo1f
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 6</span>
+                                <span>
+                                    <img src="images/heads/head-6.png"
+                                         class="ratings__table-data__img" alt>
+                                    Deadp00l
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 7</span>
+                                <span>
+                                    <img src="images/heads/head-7.png"
+                                         class="ratings__table-data__img" alt>
+                                    LuvMan
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 8</span>
+                                <span>
+                                    <img src="images/heads/head-8.png"
+                                         class="ratings__table-data__img" alt>
+                                    DragonLord007
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 9</span>
+                                <span>
+                                    <img src="images/heads/head-9.png"
+                                         class="ratings__table-data__img" alt>
+                                    azer050
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 10</span>
+                                <span>
+                                    <img src="images/heads/head-10.png"
+                                         class="ratings__table-data__img" alt>
+                                    Madness_17
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 11</span>
+                                <span>
+                                    <img src="images/heads/head-11.png"
+                                         class="ratings__table-data__img" alt>
+                                    THE_forest_YT
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 12</span>
+                                <span>
+                                    <img src="images/heads/head-12.png"
+                                         class="ratings__table-data__img" alt>
+                                    Taulent
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 13</span>
+                                <span>
+                                    <img src="images/heads/head-1.png"
+                                         class="ratings__table-data__img" alt>
+                                    kosta09
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 14</span>
+                                <span>
+                                    <img src="images/heads/head-2.png"
+                                         class="ratings__table-data__img" alt>
+                                    Chaotic
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 15</span>
+                                <span>
+                                    <img src="images/heads/head-3.png"
+                                         class="ratings__table-data__img" alt>
+                                    poker_edishen
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 16</span>
+                                <span>
+                                    <img src="images/heads/head-4.png"
+                                         class="ratings__table-data__img" alt>
+                                    Aleksey3275
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 17</span>
+                                <span>
+                                    <img src="images/heads/head-5.png"
+                                         class="ratings__table-data__img" alt>
+                                    SunRay
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 18</span>
+                                <span>
+                                    <img src="images/heads/head-6.png"
+                                         class="ratings__table-data__img" alt>
+                                    FlipSize
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 19</span>
+                                <span>
+                                    <img src="images/heads/head-7.png"
+                                         class="ratings__table-data__img" alt>
+                                    AMIR321
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 20</span>
+                                <span>
+                                    <img src="images/heads/head-8.png"
+                                         class="ratings__table-data__img" alt>
+                                    MkZet
+                                </span>
+                                <span>9 344 </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                    </ol>
+                    <div class="text_style-center">
+                        <a href="#" class="btn btn_success btn_size-md">
+                            Показать еще
+                            <span class="text text_style-yellow">20 игроков</span>
+                        </a>
+                    </div>
+                </li>
+                <!-- Время в игре -->
+                <li class="ratings__tab-item"
+                    data-rating="time"
+                >
+                    <ol class="ratings__table ratings__table_columns-1">
+                        <li>
+                            <h2 class="ratings__tab-heading">Вы не входите в ТОП-500 рейтинга</h2>
+                            <a href="profile.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-own"
+                               data-type="skip"
+                            >
+                                <span class="ratings__table-data__rank"># -</span>
+                                <span>
+                                    <img src="images/heads/head-3.png"
+                                         class="ratings__table-data__img" alt>
+                                    Nebelherz
+                                </span>
+                                <span>3 453 </span>
+                            </a>
+                        </li>
+                    </ol>
+                    <!---->
+                    <ol class="ratings__table ratings__table_columns-1 animate-list">
+                        <li class="ratings__table-row ratings__table-row_type-header"
+                            data-type="skip">
+                            <span>Место</span>
+                            <span>Игрок</span>
+                            <span>Часов</span>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-top
+                               ratings__table-row_type-top-1"
+                            >
+                                <span class="ratings__table-data__rank"># 1</span>
+                                <span>
+                                    <img src="images/heads/head-1.png"
+                                         class="ratings__table-data__img" alt>
+                                    Swamply
+                                </span>
+                                <span>15 833 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-top
+                               ratings__table-row_type-top-2"
+                            >
+                                <span class="ratings__table-data__rank"># 2</span>
+                                <span>
+                                    <img src="images/heads/head-2.png"
+                                         class="ratings__table-data__img" alt>
+                                    Mine03
+                                </span>
+                                <span>14 932 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-top
+                               ratings__table-row_type-top-3"
+                            >
+                                <span class="ratings__table-data__rank"># 3</span>
+                                <span>
+                                    <img src="images/heads/head-3.png"
+                                         class="ratings__table-data__img" alt>
+                                    DarthSidi0us
+                                </span>
+                                <span>10 745 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 4</span>
+                                <span>
+                                    <img src="images/heads/head-4.png"
+                                         class="ratings__table-data__img" alt>
+                                    Deadp00l
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 5</span>
+                                <span>
+                                    <img src="images/heads/head-5.png"
+                                         class="ratings__table-data__img" alt>
+                                    LimeWo1f
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 6</span>
+                                <span>
+                                    <img src="images/heads/head-6.png"
+                                         class="ratings__table-data__img" alt>
+                                    Deadp00l
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 7</span>
+                                <span>
+                                    <img src="images/heads/head-7.png"
+                                         class="ratings__table-data__img" alt>
+                                    LuvMan
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 8</span>
+                                <span>
+                                    <img src="images/heads/head-8.png"
+                                         class="ratings__table-data__img" alt>
+                                    DragonLord007
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 9</span>
+                                <span>
+                                    <img src="images/heads/head-9.png"
+                                         class="ratings__table-data__img" alt>
+                                    azer050
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 10</span>
+                                <span>
+                                    <img src="images/heads/head-10.png"
+                                         class="ratings__table-data__img" alt>
+                                    Madness_17
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 11</span>
+                                <span>
+                                    <img src="images/heads/head-11.png"
+                                         class="ratings__table-data__img" alt>
+                                    THE_forest_YT
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 12</span>
+                                <span>
+                                    <img src="images/heads/head-12.png"
+                                         class="ratings__table-data__img" alt>
+                                    Taulent
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 13</span>
+                                <span>
+                                    <img src="images/heads/head-1.png"
+                                         class="ratings__table-data__img" alt>
+                                    kosta09
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 14</span>
+                                <span>
+                                    <img src="images/heads/head-2.png"
+                                         class="ratings__table-data__img" alt>
+                                    Chaotic
+                                </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 15</span>
+                                <span>
+                                    <img src="images/heads/head-3.png"
+                                         class="ratings__table-data__img" alt>
+                                    poker_edishen
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 16</span>
+                                <span>
+                                    <img src="images/heads/head-4.png"
+                                         class="ratings__table-data__img" alt>
+                                    Aleksey3275
+                                </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 17</span>
+                                <span>
+                                    <img src="images/heads/head-5.png"
+                                         class="ratings__table-data__img" alt>
+                                    SunRay
+                                </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 18</span>
+                                <span>
+                                    <img src="images/heads/head-6.png"
+                                         class="ratings__table-data__img" alt>
+                                    FlipSize
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 19</span>
+                                <span>
+                                    <img src="images/heads/head-7.png"
+                                         class="ratings__table-data__img" alt>
+                                    AMIR321
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 20</span>
+                                <span>
+                                    <img src="images/heads/head-8.png"
+                                         class="ratings__table-data__img" alt>
+                                    MkZet
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                    </ol>
+                    <div class="text_style-center">
+                        <a href="#" class="btn btn_success btn_size-md">
+                            Показать еще
+                            <span class="text text_style-yellow">20 игроков</span>
+                        </a>
+                    </div>
+                </li>
+                <!-- Баланс в коинах -->
+                <li class="ratings__tab-item"
+                    data-rating="coins"
+                >
+                    <ol class="ratings__table ratings__table_columns-1">
+                        <li>
+                            <h2 class="ratings__tab-heading">Вы не входите в ТОП-500 рейтинга</h2>
+                            <a href="profile.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-own"
+                               data-type="skip"
+                            >
+                                <span class="ratings__table-data__rank"># -</span>
+                                <span>
+                                    <img src="images/heads/head-3.png"
+                                         class="ratings__table-data__img" alt>
+                                    Nebelherz
+                                </span>
+                                <span>219 </span>
+                            </a>
+                        </li>
+                    </ol>
+                    <!---->
+                    <ol class="ratings__table ratings__table_columns-1 animate-list">
+                        <li class="ratings__table-row ratings__table-row_type-header"
+                            data-type="skip">
+                            <span>Место</span>
+                            <span>Игрок</span>
+                            <span>Коинов</span>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-top
+                               ratings__table-row_type-top-1"
+                            >
+                                <span class="ratings__table-data__rank"># 1</span>
+                                <span>
+                                    <img src="images/heads/head-1.png"
+                                         class="ratings__table-data__img" alt>
+                                    Swamply
+                                </span>
+                                <span>15 833 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-top
+                               ratings__table-row_type-top-2"
+                            >
+                                <span class="ratings__table-data__rank"># 2</span>
+                                <span>
+                                    <img src="images/heads/head-2.png"
+                                         class="ratings__table-data__img" alt>
+                                    Mine03
+                                </span>
+                                <span>14 932 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-top
+                               ratings__table-row_type-top-3"
+                            >
+                                <span class="ratings__table-data__rank"># 3</span>
+                                <span>
+                                    <img src="images/heads/head-3.png"
+                                         class="ratings__table-data__img" alt>
+                                    DarthSidi0us
+                                </span>
+                                <span>10 745 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 4</span>
+                                <span>
+                                    <img src="images/heads/head-4.png"
+                                         class="ratings__table-data__img" alt>
+                                    Deadp00l
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 5</span>
+                                <span>
+                                    <img src="images/heads/head-5.png"
+                                         class="ratings__table-data__img" alt>
+                                    LimeWo1f
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 6</span>
+                                <span>
+                                    <img src="images/heads/head-6.png"
+                                         class="ratings__table-data__img" alt>
+                                    Deadp00l
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 7</span>
+                                <span>
+                                    <img src="images/heads/head-7.png"
+                                         class="ratings__table-data__img" alt>
+                                    LuvMan
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 8</span>
+                                <span>
+                                    <img src="images/heads/head-8.png"
+                                         class="ratings__table-data__img" alt>
+                                    DragonLord007
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 9</span>
+                                <span>
+                                    <img src="images/heads/head-9.png"
+                                         class="ratings__table-data__img" alt>
+                                    azer050
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 10</span>
+                                <span>
+                                    <img src="images/heads/head-10.png"
+                                         class="ratings__table-data__img" alt>
+                                    Madness_17
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 11</span>
+                                <span>
+                                    <img src="images/heads/head-11.png"
+                                         class="ratings__table-data__img" alt>
+                                    THE_forest_YT
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 12</span>
+                                <span>
+                                    <img src="images/heads/head-12.png"
+                                         class="ratings__table-data__img" alt>
+                                    Taulent
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 13</span>
+                                <span>
+                                    <img src="images/heads/head-1.png"
+                                         class="ratings__table-data__img" alt>
+                                    kosta09
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 14</span>
+                                <span>
+                                    <img src="images/heads/head-2.png"
+                                         class="ratings__table-data__img" alt>
+                                    Chaotic
+                                </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 15</span>
+                                <span>
+                                    <img src="images/heads/head-3.png"
+                                         class="ratings__table-data__img" alt>
+                                    poker_edishen
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 16</span>
+                                <span>
+                                    <img src="images/heads/head-4.png"
+                                         class="ratings__table-data__img" alt>
+                                    Aleksey3275
+                                </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 17</span>
+                                <span>
+                                    <img src="images/heads/head-5.png"
+                                         class="ratings__table-data__img" alt>
+                                    SunRay
+                                </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 18</span>
+                                <span>
+                                    <img src="images/heads/head-6.png"
+                                         class="ratings__table-data__img" alt>
+                                    FlipSize
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 19</span>
+                                <span>
+                                    <img src="images/heads/head-7.png"
+                                         class="ratings__table-data__img" alt>
+                                    AMIR321
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 20</span>
+                                <span>
+                                    <img src="images/heads/head-8.png"
+                                         class="ratings__table-data__img" alt>
+                                    MkZet
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                    </ol>
+                    <div class="text_style-center">
+                        <a href="#" class="btn btn_success btn_size-md">
+                            Показать еще
+                            <span class="text text_style-yellow">20 игроков</span>
+                        </a>
+                    </div>
+                </li>
+                <!-- Баланс в рублях -->
+                <li class="ratings__tab-item"
+                    data-rating="rubles"
+                >
+                    <ol class="ratings__table ratings__table_columns-1">
+                        <li>
+                            <h2 class="ratings__tab-heading">Вы не входите в ТОП-500 рейтинга</h2>
+                            <a href="profile.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-own"
+                               data-type="skip"
+                            >
+                                <span class="ratings__table-data__rank"># -</span>
+                                <span>
+                                    <img src="images/heads/head-3.png"
+                                         class="ratings__table-data__img" alt>
+                                    Nebelherz
+                                </span>
+                                <span>405 </span>
+                            </a>
+                        </li>
+                    </ol>
+                    <!---->
+                    <ol class="ratings__table ratings__table_columns-1 animate-list">
+                        <li class="ratings__table-row ratings__table-row_type-header"
+                            data-type="skip">
+                            <span>Место</span>
+                            <span>Игрок</span>
+                            <span>Рублей</span>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-top
+                               ratings__table-row_type-top-1"
+                            >
+                                <span class="ratings__table-data__rank"># 1</span>
+                                <span>
+                                    <img src="images/heads/head-1.png"
+                                         class="ratings__table-data__img" alt>
+                                    Swamply
+                                </span>
+                                <span>15 833 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-top
+                               ratings__table-row_type-top-2"
+                            >
+                                <span class="ratings__table-data__rank"># 2</span>
+                                <span>
+                                    <img src="images/heads/head-2.png"
+                                         class="ratings__table-data__img" alt>
+                                    Mine03
+                                </span>
+                                <span>14 932 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row
+                               ratings__table-row_type-top
+                               ratings__table-row_type-top-3"
+                            >
+                                <span class="ratings__table-data__rank"># 3</span>
+                                <span>
+                                    <img src="images/heads/head-3.png"
+                                         class="ratings__table-data__img" alt>
+                                    DarthSidi0us
+                                </span>
+                                <span>10 745 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 4</span>
+                                <span>
+                                    <img src="images/heads/head-4.png"
+                                         class="ratings__table-data__img" alt>
+                                    Deadp00l
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 5</span>
+                                <span>
+                                    <img src="images/heads/head-5.png"
+                                         class="ratings__table-data__img" alt>
+                                    LimeWo1f
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 6</span>
+                                <span>
+                                    <img src="images/heads/head-6.png"
+                                         class="ratings__table-data__img" alt>
+                                    Deadp00l
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 7</span>
+                                <span>
+                                    <img src="images/heads/head-7.png"
+                                         class="ratings__table-data__img" alt>
+                                    LuvMan
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 8</span>
+                                <span>
+                                    <img src="images/heads/head-8.png"
+                                         class="ratings__table-data__img" alt>
+                                    DragonLord007
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 9</span>
+                                <span>
+                                    <img src="images/heads/head-9.png"
+                                         class="ratings__table-data__img" alt>
+                                    azer050
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 10</span>
+                                <span>
+                                    <img src="images/heads/head-10.png"
+                                         class="ratings__table-data__img" alt>
+                                    Madness_17
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 11</span>
+                                <span>
+                                    <img src="images/heads/head-11.png"
+                                         class="ratings__table-data__img" alt>
+                                    THE_forest_YT
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 12</span>
+                                <span>
+                                    <img src="images/heads/head-12.png"
+                                         class="ratings__table-data__img" alt>
+                                    Taulent
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 13</span>
+                                <span>
+                                    <img src="images/heads/head-1.png"
+                                         class="ratings__table-data__img" alt>
+                                    kosta09
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 14</span>
+                                <span>
+                                    <img src="images/heads/head-2.png"
+                                         class="ratings__table-data__img" alt>
+                                    Chaotic
+                                </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 15</span>
+                                <span>
+                                    <img src="images/heads/head-3.png"
+                                         class="ratings__table-data__img" alt>
+                                    poker_edishen
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 16</span>
+                                <span>
+                                    <img src="images/heads/head-4.png"
+                                         class="ratings__table-data__img" alt>
+                                    Aleksey3275
+                                </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 17</span>
+                                <span>
+                                    <img src="images/heads/head-5.png"
+                                         class="ratings__table-data__img" alt>
+                                    SunRay
+                                </span>
+                                <span>5 905 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 18</span>
+                                <span>
+                                    <img src="images/heads/head-6.png"
+                                         class="ratings__table-data__img" alt>
+                                    FlipSize
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 19</span>
+                                <span>
+                                    <img src="images/heads/head-7.png"
+                                         class="ratings__table-data__img" alt>
+                                    AMIR321
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile_someone.html"
+                               class="
+                               btn
+                               tooltip-trigger
+                               ratings__table-row"
+                            >
+                                <span class="ratings__table-data__rank"># 20</span>
+                                <span>
+                                    <img src="images/heads/head-8.png"
+                                         class="ratings__table-data__img" alt>
+                                    MkZet
+                                </span>
+                                <span>9 344 </span>
+                            </a>
+                        </li>
+                    </ol>
+                    <div class="text_style-center">
+                        <a href="#" class="btn btn_success btn_size-md">
+                            Показать еще
+                            <span class="text text_style-yellow">20 игроков</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sidebar-feed">
+        <div class="sidebar-feed__section">
+            <h3 class="sidebar-feed__section-heading">
+                Уведомлений
+                <span class="text text_style-aqua">17</span>
+            </h3>
+            <div class="sidebar-feed__notice-status
+                        sidebar-feed__notice-status_unread">
+                <div class="sidebar-feed__notice-status__icon">
+                    <span class="sidebar-feed__notice-status__counter">
+                        17
+                    </span>
+                </div>
+            </div>
+            <ul class="sidebar-feed__section-list
+                       sidebar-feed__section-list_hover-hide">
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Не следует, однако забывать, что новая модель позволяет...
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 17 июля, 18:44
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-primary
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Не следует, однако забывать, что постоянное анализ позиций, занимаемых участниками
+                        <span class="sidebar-feed__notice-meta">
+                             Получено 13 июля, 23:05
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-warning
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Идейные соображения высшего порядка, а также рамки и место...
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 13 июля, 23:05
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-danger
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Требуют от нас анализа позиций, занимаемых участниками в...
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 07 июля, 12:54
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-success
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 04 июля, 16:33
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-more
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Предыдущие уведомления
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-feed__section">
+            <h3 class="sidebar-feed__section-heading">
+                Друзей
+                <span class="text text_style-aqua">256</span>
+            </h3>
+            <ul class="sidebar-feed__section-list">
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_near
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-11.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Teme4chka</h4>
+                            <p class="sidebar-feed__friend-item__user-status">10 блоков от вас</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_near
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-12.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">_Malina1703_</h4>
+                            <p class="sidebar-feed__friend-item__user-status">56 блоков от вас</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_near
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-9.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">xxxDark12xxx</h4>
+                            <p class="sidebar-feed__friend-item__user-status">102 блока от вас</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_online
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-2.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">ImmortalLove</h4>
+                            <p class="sidebar-feed__friend-item__user-status">В сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_online
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-3.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">xAgare</h4>
+                            <p class="sidebar-feed__friend-item__user-status">В сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_online
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-5.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">TROJ</h4>
+                            <p class="sidebar-feed__friend-item__user-status">В сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-4.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">JoyereKnester</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-6.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">krabuik</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-7.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">YFoxTest2</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-8.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">No4naya_Nyasha</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-9.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Azazzzinys</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-12.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">KillerMoj</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-11.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Likeaboss</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-10.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">vonderlol</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-4.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Alexsasha93</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-5.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">geraosfrrr</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal">
+    <!-- Содержание модального окна, динамически подгружаемое через JS -->
+</div>
+<div class="tooltip" style="display: none">
+    <div class="tooltip__content">
+        <h3 class="tooltip__title">Заголовок</h3>
+        <p class="tooltip__row">Описание</p>
+        <p class="tooltip__meta">Модификация</p>
+    </div>
+</div>
+<script src="js/script.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+// Minecraft Regular
+@font-face {
+  font-family: MinecraftRegular;
+  font-style: normal;
+  font-weight: normal;
+  src:url('#{$urlFonts}MinecraftRegular.woff') format('woff')
+}
+// Minecraft Title
+@font-face {
+  font-family: MinecraftTitle;
+  font-style: normal;
+  font-weight: normal;
+  src:url('#{$urlFonts}MinecraftTitle.woff') format('woff')
+}
+
+// Конфигурация для шрифтов
+body {
+  font-kerning: none;
+  font-variant-ligatures: no-common-ligatures;
+}

@@ -1,0 +1,179 @@
+.add-balance{
+  text-align: center;
+
+  .modal-area{
+    width: 1300px;
+    margin: 35px auto;
+    padding: 5px 0;
+
+    &__heading{
+      font-size: 60px;
+    }
+  }
+
+  // Список вариантов пополнения
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+
+    min-height: 420px;
+    list-style: none;
+
+    // Карточка пополнения
+    &-item{
+      --background: #{alpha($green, .4)};
+      --gradient: #{alpha($green, .6)};
+      --value: 10px;
+      --value-reverse: -10px;
+
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+
+      background:
+              var(--background)
+              linear-gradient(
+                              135deg,
+                              #{var(--gradient)},
+                              transparent
+              ) center;
+      ;
+      background-size: 100% 100%;
+      padding: 25px;
+      height: 100%;
+      box-shadow:
+              0 0 var(--blur) $white,
+
+              inset
+              var(--value)
+              var(--value)
+              alpha($white, .3),
+
+              inset
+              var(--value-reverse)
+              var(--value-reverse)
+              alpha($black, .3);
+
+      &::before{
+        box-shadow: 0 0 0 var(--value) $white;
+        top: -25px;
+      }
+
+      // Для тестирования эффектов, отключено
+      &::after{
+        //content: '';
+
+        display: block;
+        position: absolute;
+        background:
+                linear-gradient(
+                                90deg,
+                                alpha($white, .4) 0 100%
+                ) no-repeat -500px 0;
+        background-size: 200px 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: testAnim 6s ease-in-out infinite;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      // Тестовая анимация
+      @keyframes testAnim{
+        0%, 85%{
+          background-position-x: -500px;
+        }
+        100%{
+          background-position-x: 500px;
+        }
+      }
+
+      &:hover{
+        --blur: 60px;
+        z-index: 1;
+      }
+
+      // Модификатор цветовой стилистики
+      &_style{
+        &-gold{
+          --background: #{alpha($gold, .6)};
+          --gradient: #{$gold};
+        }
+        &-purple{
+          --background: #{alpha($light-purple, .4)};
+          --gradient: #{$light-purple};
+        }
+      }
+
+      // Выделение текста
+      &__mark{
+        --background: #{alpha($black, .6)};
+        --text-shadow-size: 5px;
+
+        display: block;
+        background: var(--background);
+        line-height: 28px;
+        font-size: 32px;
+        padding: 0 10px;
+        @include bordered(var(--background));
+
+        &_other{
+          .text{
+            font-size: 24px;
+            line-height: 36px!important;
+          }
+        }
+      }
+
+      .text{
+        display: block;
+        line-height: 42px;
+      }
+
+      small{
+        --text-shadow-size: 3px;
+
+        display: inline-block;
+        font-size: 24px;
+      }
+    }
+
+    .btn{
+      margin: 0;
+    }
+  }
+
+  &__icon{
+    display: block;
+    width: 192px;
+    height: 192px;
+    margin: auto;
+    image-rendering: pixelated;
+  }
+
+  &__other-amount{
+    display: inline-block;
+    position: relative;
+    width: 420px;
+    margin: 0 -15px 15px 0;
+    text-align: left;
+
+    .currency{
+      position: absolute;
+      top: 11px;
+      left: 10px;
+    }
+  }
+
+  &__input{
+    border: none;
+    background: none;
+    font-size: 18px;
+    color: var(--white);
+    padding: 15px 50px;
+    @include bordered($dark-gray);
+    outline: none;
+  }
+}

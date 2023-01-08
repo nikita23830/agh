@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+  // Ключевые модули //
+
+@import
+// Переменные
+'core/variables',
+// Функции и примеси
+'core/mixins',
+// Директивы с подключением шрифтов
+'core/fonts',
+// Сброс стилей у элементов
+'core/reset',
+
+
+  // компоненты //
+
+// Документ-родитель
+'components/body',
+// Контейнер для содержимого
+'components/wallpaper',
+// Заголовок экрана
+'components/heading',
+// Кнопки и их внутренние компоненты
+'components/buttons',
+// Стилизация текста
+'components/text',
+// Иконки игровых валют
+'components/currency',
+// Компоненты для формы ввода
+'components/form-control',
+// Анимированный список
+'components/animate-list',
+// Компоненты полосы прокрутки
+'components/scroll',
+// Отображение стандартного GUI
+'components/window',
+// Отображение набора ресурсов
+'components/inventory',
+// Промо-компонент
+'components/promo',
+// Уведомления
+'components/alert',
+// Всплывающие подсказки
+'components/tooltip',
+
+// Шапка в навигационной панели с данными о пользователе
+'components/header',
+// Переключение между страницами в навигационной панели
+'components/nav',
+// Боковая панель со списком друзей и уведомлений
+'components/sidebar-feed',
+
+// Контейнер для содержимого страницы
+'components/page',
+// Карточки для платных услуг
+'components/donate',
+
+
+  // Страницы //
+
+// Главное меню
+'pages/index',
+
+// Наши привилегии
+'pages/privilege',
+// Магазин блоков
+'pages/shop',
+
+// Профиль игрока
+'pages/profile',
+// Параметры профиля
+'pages/profile-settings',
+// Изменить внешность
+'pages/personalization',
+// Заархивированный экран со списком достижений, первая пробная визуализация экрана, в последствии полностью переработанная
+'pages/achievements_legacy',
+// Список достижений
+'pages/achievements',
+// Игровая статистика
+'pages/stats',
+// Рейтинги игроков
+'pages/ratings',
+
+// Мировой прогресс
+'pages/worlds',
+// Помощь по предметам
+'pages/wiki',
+
+// Корзина
+'pages/cart',
+// Аукцион
+'pages/auction',
+
+// Боевой пропуск
+'pages/battle-pass',
+
+
+  // Модальные окна //
+
+// Общая стилизация модальных окон
+'modal/modal',
+
+// Покупка донат-группы
+'modal/privilege',
+// Покупка и открытие кейсов
+'modal/cases',
+// Просмотр и покупка донат-наборов
+'modal/kits',
+
+// Покупка предмета в магазине блоков
+'modal/buy-item',
+// Подтверждение действия
+'modal/confirm',
+// Список уведомлений
+'modal/notify',
+
+// Пополнение баланса
+'modal/add-balance',
+// Обмен коинов
+'modal/coins-exchange',
+
+// Раздел аукциона
+'modal/auction-trade',
+// Прогресс достижений
+'modal/achievements-progress',
+
+// Покупка боевого пропуска
+'modal/battle-pass__buy',
+
+
+// Плагины //
+'vendor/bootstrap.grid.css'
+;

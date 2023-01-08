@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <!-- Standard Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Site Properities -->
+    <title>SC | Изменить внешность</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!--<link rel="icon" type="image/png" href="favicon.ico" />-->
+
+    <!-- Scripts -->
+    <!--Здесь пока ничего нет-->
+</head>
+<body class="overlay-checked">
+<div class="overlay">
+    <div class="header">
+        <div class="wrapper">
+            <ul class="header-list">
+                <!-- Назад в главное меню -->
+                <li class="header-section">
+                    <a href="index.html"
+                       class="btn-hover
+                              header-item
+                              tooltip-trigger"
+                       data-title="Вернуться назад"
+                       data-meta="Кликни сюда!"
+                    >
+                        <img src="images/icon/menu.png"
+                             class="header-item__img" alt>
+                        Назад
+                    </a>
+
+                    <!-- Корзина -->
+                    <a href="cart.html"
+                       class="btn-hover
+                              header-item
+                              tooltip-trigger"
+                       data-title="Мои покупки"
+                       data-row="
+                                 <span class=dark-gray>Здесь пока ничего нет</span>
+                       "
+                    >
+                        <img src="images/icon/cart.png"
+                             class="header-item__img" alt>
+                        <span class="text text_style-gray">
+                            Мои покупки
+                        </span>
+                    </a>
+                </li>
+
+                <!-- Элемент-заполнитель -->
+                <li>
+
+                </li>
+
+                <li class="header-section">
+                    <!-- Баланс РУБЛЕЙ -->
+                    <a class="btn-hover
+                              header-item
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="Пополнить баланс"
+                       data-row="
+                                 На балансе
+                                 <span class=green>
+                                    0
+                                    <i class='currency currency_size-24'></i>
+                                 </span>
+                                 рублей
+                       "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="add-balance"
+                    >
+                        <i class="currency currency_size-32"></i>
+                        <span class="text text_style-green">0 РУБ.</span>
+                    </a>
+
+                    <!-- Баланс КОИНОВ -->
+                    <a class="btn-hover
+                              header-item
+                              modal-trigger
+                              tooltip-trigger"
+                       data-title="Обменник коинов"
+                       data-row="
+                                 На счету
+                                 <span class=gold>
+                                    7 890
+                                    <i class='currency currency_coin currency_size-24'></i>
+                                 </span>
+                                 коинов
+                       "
+                       data-meta="Кликни сюда!"
+                       data-modal-name="coins-exchange"
+                    >
+                        <i class="currency currency_coin currency_size-32"></i>
+                        <span class="text text_style-gold">7 890</span>
+                    </a>
+
+                    <!-- Мой профиль -->
+                    <a href="profile.html"
+                       class="btn-hover
+                              header-item
+                              tooltip-trigger"
+                       data-title="Мой профиль"
+                       data-row="
+                                 <span class=dark-gray>Аккаунт:</span>
+                                 <i class='tooltip-avatar'></i>
+                                 Nebelherz
+                                 <br>
+                                 <span class=dark-gray>Игровой статус:</span>
+                                 <span class=light-purple>Deluxe</span>
+                       "
+                       data-meta="Кликни сюда!"
+                    >
+                        <img src="images/icon/profile.png"
+                             class="header-item__img" alt>
+                        Мой профиль
+                    </a>
+                </li>
+            </ul>
+            <div class="nav">
+                <a href="profile.html"
+                   class="btn
+                          nav-item
+                          nav-item_role-control
+                          tooltip-trigger"
+                   data-title="
+                   <span class=gray>Ранее:</span>
+                   Мой профиль
+                   "
+                   data-meta="Нажми <span class=aqua>Q</span> или <span class=aqua>кликни</span>"
+                >
+                    <i class="nav-icon nav-icon_arrow-left"></i>
+                    Q
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="profile.html"
+                           class="btn
+                                  nav-item
+                                  tooltip-trigger"
+                           data-title="Мой профиль"
+                           data-row="
+                                 <span class=dark-gray>Аккаунт:</span>
+                                 <i class='tooltip-avatar'></i>
+                                 Nebelherz
+                                 <br>
+                                 <span class=dark-gray>Игровой статус:</span>
+                                 <span class=light-purple>Deluxe</span>
+                           "
+                           data-meta="Кликни сюда!"
+                        >
+                            Мой профиль
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="personalization.html"
+                           class="btn
+                                  nav-item
+                                  nav-item_checked
+                                  tooltip-trigger"
+                           data-title="Изменить внешность"
+                           data-row="Добавь изюминки своего персонажу — <span class=white>крылья</span>, <span class=white>шляпы</span>, <span class=white>питомцы</span> и многое другое!"
+                           data-meta="Кликни сюда!"
+                        >
+                            Изменить внешность
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="achievements.html"
+                           class="btn
+                                  nav-item
+                                  tooltip-trigger"
+                           data-title="<span class=gold>Достижения</span>"
+                           data-row="
+                                     <span class=dark-gray>Завершено:</span>
+                                     <span class=aqua>1 из 37 категорий</span>
+                                     <br>
+                                     <span class=dark-gray>Открыто:</span>
+                                     <span class=green>87 достижений</span>
+                                     <hr>
+                                     <span class=gold>Общий прогресс:</span>
+                                     <span class=white>7%</span>
+                                     <span class='tooltip__progress-bar'>
+                                         <span class='tooltip__progress-line' style='width: 7%'></span>
+                                     </span>
+                           "
+                           data-meta="Кликни сюда!"
+                        >
+                            Достижения
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="stats.html"
+                           class="btn
+                                  nav-item
+                                  tooltip-trigger"
+                           data-title="<span class=green>Статистика</span>"
+                           data-row="Время в игре, поставлено или создано блоков - <span class=gold>всё здесь</span>!"
+                           data-meta="Кликни сюда!"
+                        >
+                            Статистика
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="ratings.html"
+                           class="btn
+                                  nav-item
+                                  tooltip-trigger"
+                           data-title="Рейтинги игроков"
+                           data-row="Соревнуйтесь с другими игроками за <span class=green>первенство</span>!"
+                           data-meta="Кликни сюда!"
+                        >
+                            Рейтинги
+                        </a>
+                    </li>
+                </ul>
+                <a href="achievements.html"
+                   class="btn
+                          nav-item
+                          nav-item_role-control
+                          tooltip-trigger"
+                   data-title="
+                   <span class=gray>Далее:</span>
+                   <span class=gold>Достижения</span>
+                   "
+                   data-meta="Нажми <span class=aqua>E</span> или <span class=aqua>кликни</span>"
+                >
+                    E
+                    <i class="nav-icon nav-icon_arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Переключение вкладок, навигация -->
+    <div class="personalization-nav">
+        <div class="wrapper">
+            <ul class="personalization-nav__list
+                       list-trigger"
+                data-trigger="personalization-nav__item"
+                data-trigger-reload="personalization-list"
+            >
+                <li>
+                    <a class="personalization-nav__item
+                              tooltip-trigger"
+                       data-title="Аватарка"
+                       data-row="
+                       <span class=dark-gray>Ничего не надето</span>
+                       "
+                    >
+                        <img src="images/icon/avatar.png"
+                             class="personalization-nav__item-img"
+                             alt>
+                    </a>
+                </li>
+                <li>
+                    <a class="personalization-nav__item
+                              personalization-nav__item_checked
+                              tooltip-trigger"
+                       data-title="Шапка"
+                       data-row="
+                       <span class=dark-gray>Надета:</span>
+                       <span class=gold>Утиная шапочка</span>
+                       "
+                    >
+                        <img src="images/icon/hat.png"
+                             class="personalization-nav__item-img"
+                             alt>
+                    </a>
+                </li>
+                <li>
+                    <a class="personalization-nav__item
+                              tooltip-trigger"
+                       data-title="Маска"
+                       data-row="
+                       <span class=dark-gray>Ничего не надето</span>
+                       "
+                    >
+                        <img src="images/icon/mask.png"
+                             class="personalization-nav__item-img"
+                             alt>
+                    </a>
+                </li>
+                <li>
+                    <a class="personalization-nav__item
+                              tooltip-trigger"
+                       data-title="Ангелочек"
+                       data-row="
+                       <span class=dark-gray>Ничего не надето</span>
+                       "
+                    >
+                        <img src="images/icon/angel.png"
+                             class="personalization-nav__item-img"
+                             alt>
+                    </a>
+                </li>
+                <li>
+                    <a class="personalization-nav__item
+                              tooltip-trigger"
+                       data-title="Крылья"
+                       data-row="
+                       <span class=dark-gray>Ничего не надето</span>
+                       "
+                    >
+                        <img src="images/icon/body.png"
+                             class="personalization-nav__item-img"
+                             alt>
+                    </a>
+                </li>
+                <li>
+                    <a class="personalization-nav__item
+                              tooltip-trigger"
+                       data-title="Хвост"
+                       data-row="
+                       <span class=dark-gray>Ничего не надето</span>
+                       "
+                    >
+                        <img src="images/icon/tail.png"
+                             class="personalization-nav__item-img"
+                             alt>
+                    </a>
+                </li>
+                <li>
+                    <a class="personalization-nav__item
+                              tooltip-trigger"
+                       data-title="Питомец"
+                       data-row="
+                       <span class=dark-gray>Ничего не надето</span>
+                       "
+                    >
+                        <img src="images/icon/pet.png"
+                             class="personalization-nav__item-img"
+                             alt>
+                    </a>
+                </li>
+                <li>
+                    <a class="personalization-nav__item
+                              tooltip-trigger"
+                       data-title="Эффект"
+                       data-row="
+                       <span class=dark-gray>Ничего не надето</span>
+                       "
+                    >
+                        <img src="images/icon/track.png"
+                             class="personalization-nav__item-img"
+                             alt>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page">
+        <!---->
+        <div class="wrapper">
+            <!-- Основная сетка и контейнер страницы -->
+            <div class="personalization-grid">
+                <!-- Рендер скина в 3D -->
+                <div class="personalization__character animate-list">
+                    <canvas class="personalization__character-skin" id="viewSkin3d"></canvas>
+                </div>
+                <!-- Раздел с выбором персоналищации -->
+                <div class="personalization-gallery">
+                    <!-- Первая коллекция -->
+                    <h6 class="page-heading">
+                        Головные уборы:
+                        <span class="text text_style-green">7 из 16</span>
+                    </h6>
+                    <ul class="personalization-list
+                               animate-list
+                               list-trigger
+                        "
+                        data-trigger="personalization-item-purchased"
+                        data-trigger-reload="personalization__character"
+                    >
+                        <!-- Купленные -->
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      personalization-item-purchased
+                                      tooltip-trigger"
+                               data-title="Шляпа пасечника"
+                               data-meta="Надеть"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/1.png" alt>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      personalization-item-purchased
+                                      tooltip-trigger"
+                               data-title="Шапка-ушанка"
+                               data-meta="Надеть"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/2.png" alt>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      personalization-item-purchased
+                                      personalization-item-purchased_checked
+                                      tooltip-trigger"
+                               data-title="Утиная шапочка"
+                               data-meta="Надеть"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/3.png" alt>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      personalization-item-purchased
+                                      tooltip-trigger"
+                               data-title="Рыцарский шлем"
+                               data-meta="Надеть"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/4.png" alt>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      personalization-item-purchased
+                                      tooltip-trigger"
+                               data-title="Красная шапка"
+                               data-meta="Надеть"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/5.png" alt>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      personalization-item-purchased
+                                      tooltip-trigger"
+                               data-title="Строительная каска"
+                               data-meta="Надеть"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/6.png" alt>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      personalization-item-purchased
+                                      tooltip-trigger"
+                               data-title="Шляпа лепрекона"
+                               data-meta="Надеть"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/7.png" alt>
+                                </div>
+                            </a>
+                        </li>
+
+                        <!-- Требуют покупки -->
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      modal-trigger
+                                      tooltip-trigger"
+                               data-title="Шлем викинга"
+                               data-row="
+                                        Стоимость:
+                                        <span class=white>75</span>
+                                        <span class='currency currency_size-24'></span>
+                                        "
+                               data-meta="Подробнее"
+                               data-modal-name="personalization-purchase"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/8.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Купить:
+                                        </span>
+                                        <br>
+                                        75
+                                        <i class="currency currency_size-32"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      modal-trigger
+                                      tooltip-trigger"
+                               data-title="Восточный тюрбан"
+                               data-row="
+                                        Стоимость:
+                                        <span class=white>65</span>
+                                        <span class='currency currency_size-24'></span>
+                                        "
+                               data-meta="Подробнее"
+                               data-modal-name="personalization-purchase"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/9.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Купить:
+                                        </span>
+                                        <br>
+                                        65
+                                        <i class="currency currency_size-32"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      modal-trigger
+                                      tooltip-trigger"
+                               data-title="Шляпа кролика"
+                               data-row="
+                                        Стоимость:
+                                        <span class=white>65</span>
+                                        <span class='currency currency_size-24'></span>
+                                        "
+                               data-meta="Подробнее"
+                               data-modal-name="personalization-purchase"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/10.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Купить:
+                                        </span>
+                                        <br>
+                                        65
+                                        <i class="currency currency_size-32"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      modal-trigger
+                                      tooltip-trigger"
+                               data-title="Цилиндр"
+                               data-row="
+                                        Стоимость:
+                                        <span class=white>50</span>
+                                        <span class='currency currency_size-24'></span>
+                                        "
+                               data-meta="Подробнее"
+                               data-modal-name="personalization-purchase"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/11.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Купить:
+                                        </span>
+                                        <br>
+                                        50
+                                        <i class="currency currency_size-32"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      modal-trigger
+                                      tooltip-trigger"
+                               data-title="Поварский колпак"
+                               data-row="
+                                        Стоимость:
+                                        <span class=white>2 500</span>
+                                        <span class='currency currency_coin currency_size-24'></span>
+                                        "
+                               data-meta="Подробнее"
+                               data-modal-name="personalization-purchase"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/12.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Купить:
+                                        </span>
+                                        <br>
+                                        2 500
+                                        <i class="currency currency_coin currency_size-32"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      modal-trigger
+                                      tooltip-trigger"
+                               data-title="Кепка анонима"
+                               data-row="
+                                        Стоимость:
+                                        <span class=white>1 500</span>
+                                        <span class='currency currency_coin currency_size-24'></span>
+                                        "
+                               data-meta="Подробнее"
+                               data-modal-name="personalization-purchase"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/13.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Купить:
+                                        </span>
+                                        <br>
+                                        1 500
+                                        <i class="currency currency_coin currency_size-32"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      modal-trigger
+                                      tooltip-trigger"
+                               data-title="Синяя кепка"
+                               data-row="
+                                        Стоимость:
+                                        <span class=white>750</span>
+                                        <span class='currency currency_coin currency_size-24'></span>
+                                        "
+                               data-meta="Подробнее"
+                               data-modal-name="personalization-purchase"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/14.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Купить:
+                                        </span>
+                                        <br>
+                                        750
+                                        <i class="currency currency_coin currency_size-32"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      modal-trigger
+                                      tooltip-trigger"
+                               data-title="Красная шапка"
+                               data-row="
+                                        Стоимость:
+                                        <span class=white>500</span>
+                                        <span class='currency currency_coin currency_size-24'></span>
+                                        "
+                               data-meta="Подробнее"
+                               data-modal-name="personalization-purchase"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/5.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Купить:
+                                        </span>
+                                        <br>
+                                        500
+                                        <i class="currency currency_coin currency_size-32"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn-hover
+                                      personalization-item
+                                      modal-trigger
+                                      tooltip-trigger"
+                               data-title="Наушники Лололошки"
+                               data-row="
+                                        Стоимость:
+                                        <span class=white>150</span>
+                                        <span class='currency currency_coin currency_size-24'></span>
+                                        "
+                               data-meta="Подробнее"
+                               data-modal-name="personalization-purchase"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/15.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Купить:
+                                        </span>
+                                        <br>
+                                        150
+                                        <i class="currency currency_coin currency_size-32"></i>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Вторая коллекция -->
+                    <h6 class="page-heading">
+                        <span class="text text_style-gold">Боевой пропуск:</span>
+                        <span class="text text_style-green">0 из 20</span>
+                    </h6>
+                    <ul class="personalization-list animate-list">
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Шляпа пасечника"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/1.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Шапка-ушанка"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/2.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Утиная шапочка"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/3.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Рыцарский шлем"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/4.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Красная шапка"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/5.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Строительная каска"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/6.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Шляпа лепрекона"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/7.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Шлем викинга"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/8.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Восточный тюрбан"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/9.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Шляпа кролика"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/10.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Цилиндр"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/11.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Поварский колпак"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/12.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Кепка анонима"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/13.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Синяя кепка"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/14.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="battle-pass__index.html"
+                               class="btn-hover
+                                      personalization-item
+                                      tooltip-trigger"
+                               data-title="Наушники Лололошки"
+                               data-row="<span class=gold>Награда за прохождение боевого пропуска</span>"
+                            >
+                                <div class="personalization-item__preview">
+                                    <img src="images/personalization/15.png" alt>
+                                </div>
+                                <div class="personalization-item__overlay">
+                                    <span class="text text_style-white">
+                                        <img src="images/icon/lock_alt.png"
+                                             width="64" alt>
+                                        <br>
+                                        <span class="text text_style-green">
+                                            Награда в
+                                        </span>
+                                        <span class="text text_style-gold">
+                                            Stream Pass
+                                        </span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-feed">
+        <div class="sidebar-feed__section">
+            <h3 class="sidebar-feed__section-heading">
+                Уведомлений
+                <span class="text text_style-aqua">17</span>
+            </h3>
+            <div class="sidebar-feed__notice-status
+                        sidebar-feed__notice-status_unread">
+                <div class="sidebar-feed__notice-status__icon">
+                    <span class="sidebar-feed__notice-status__counter">
+                        17
+                    </span>
+                </div>
+            </div>
+            <ul class="sidebar-feed__section-list
+                       sidebar-feed__section-list_hover-hide">
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Не следует, однако забывать, что новая модель позволяет...
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 17 июля, 18:44
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-primary
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Не следует, однако забывать, что постоянное анализ позиций, занимаемых участниками
+                        <span class="sidebar-feed__notice-meta">
+                             Получено 13 июля, 23:05
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-warning
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Идейные соображения высшего порядка, а также рамки и место...
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 13 июля, 23:05
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-danger
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Требуют от нас анализа позиций, занимаемых участниками в...
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 07 июля, 12:54
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-success
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач
+                        <span class="sidebar-feed__notice-meta">
+                            Получено 04 июля, 16:33
+                        </span>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a class="btn
+                              sidebar-feed__notice-item
+                              sidebar-feed__notice-item_role-more
+                              modal-trigger"
+                       data-modal-name="notify-list"
+                    >
+                        Предыдущие уведомления
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-feed__section">
+            <h3 class="sidebar-feed__section-heading">
+                Друзей
+                <span class="text text_style-aqua">256</span>
+            </h3>
+            <ul class="sidebar-feed__section-list">
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_near
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-11.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Teme4chka</h4>
+                            <p class="sidebar-feed__friend-item__user-status">10 блоков от вас</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_near
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-12.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">_Malina1703_</h4>
+                            <p class="sidebar-feed__friend-item__user-status">56 блоков от вас</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_near
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-9.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">xxxDark12xxx</h4>
+                            <p class="sidebar-feed__friend-item__user-status">102 блока от вас</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_online
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-2.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">ImmortalLove</h4>
+                            <p class="sidebar-feed__friend-item__user-status">В сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_online
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-3.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">xAgare</h4>
+                            <p class="sidebar-feed__friend-item__user-status">В сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                              sidebar-feed__friend-item_online
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-5.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">TROJ</h4>
+                            <p class="sidebar-feed__friend-item__user-status">В сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-4.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">JoyereKnester</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-6.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">krabuik</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-7.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">YFoxTest2</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-8.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">No4naya_Nyasha</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-9.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Azazzzinys</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-12.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">KillerMoj</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-11.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Likeaboss</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-10.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">vonderlol</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-4.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">Alexsasha93</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="sidebar-feed__section-item">
+                    <a href="profile_someone.html"
+                       class="btn
+                              sidebar-feed__friend-item
+                    ">
+                        <div class="sidebar-feed__friend-item__avatar">
+                            <img src="images/heads/head-5.png" alt
+                                 class="sidebar-feed__friend-item__avatar-image">
+                        </div>
+                        <div class="sidebar-feed__friend-item__user">
+                            <h4 class="sidebar-feed__friend-item__user-nickname">geraosfrrr</h4>
+                            <p class="sidebar-feed__friend-item__user-status">Не в сети</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal">
+    <!-- Содержание модального окна, динамически подгружаемое через JS -->
+</div>
+<div class="tooltip" style="display: none">
+    <div class="tooltip__content">
+        <h3 class="tooltip__title">Заголовок</h3>
+        <p class="tooltip__row">Описание</p>
+        <p class="tooltip__meta">Модификация</p>
+    </div>
+</div>
+<script src="js/three.min.js"></script>
+<script src="js/skinview3d.bundle.js"></script>
+<script src="js/script.min.js"></script>
+<script>
+    let FXAASkinViewer = new skinview3d.SkinViewer({
+        canvas: document.getElementById("viewSkin3d"),
+        width: 900,
+        height: 1200,
+        skin: "images/skin.png"
+    });
+
+    // Добавляем анимацию ходьбы
+    let walk = FXAASkinViewer.animations.add(skinview3d.WalkingAnimation),
+        control = skinview3d.createOrbitControls(FXAASkinViewer);
+    control.enableRotate = true;
+
+    control.enableZoom = false;
+
+    // Устанавливаем скорость ходьбы
+    walk.speed = 0.1;
+
+    // Боковой поворот скина на лево
+    setTimeout(() => {
+        FXAASkinViewer.playerObject.rotation._x = 0.5;
+        FXAASkinViewer.playerObject.quaternion._y = 0.2;
+    }, 200);
+</script>
+</body>
+</html>

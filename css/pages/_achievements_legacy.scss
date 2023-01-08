@@ -1,0 +1,118 @@
+.achievements_legacy{
+  padding: 50px 0;
+
+  // Заголовок раздела с достижениями
+  &-heading{
+    font-size: 36px;
+    color: $white;
+    text-shadow: 4px 4px $white-shadow;
+
+    //
+    &__counter{
+      color: $gold;
+      text-shadow: 4px 4px $gold-shadow;
+    }
+  }
+
+  //
+  &-filter{
+    background: #{alpha($black, .5)};
+    line-height: 32px;
+    font-size: 16px;
+    color: $gray;
+    padding: 15px 25px;
+    margin: 25px 0;
+    @include bordered($dark-gray);
+    text-shadow: 2px 2px $gray-shadow;
+
+    .btn{
+      padding: 0 15px;
+      margin: 0 0 0 10px;
+    }
+  }
+
+  // Список достижений
+  &-list{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 15px;
+
+    list-style: none;
+
+    // Элемент списка
+    &__item{
+      --background: #{alpha($black, .5)};
+      --shadow: #{$dark-gray};
+
+      display: grid;
+      grid-template-rows: 4fr auto;
+      justify-content: center;
+      grid-gap: 20px;
+
+      background: var(--background);
+      padding: 25px 15px;
+      height: 100%;
+      @include bordered(var(--shadow));
+
+      // Модификатор прогресса достижения
+      &_progress{
+        &-finished{
+          --background: #{alpha($green-shadow, .5)};
+          --shadow: #{$green};
+        }
+      }
+
+      // Картинка элемента
+      &-img{
+        display: block;
+        height: 96px;
+        width: 96px;
+        margin: 0 auto;
+        image-rendering: pixelated;
+      }
+
+      //
+      &-status{
+        --color: #{$dark-gray};
+        --background: #{$gray-shadow};
+        --text-shadow: #{$dark-gray-shadow};
+
+        display:block;
+        height: 56px;
+        line-height: 28px;
+        font-size: 18px;
+        color: var(--color);
+        text-shadow: 2px 2px var(--text-shadow);
+        text-align: center;
+
+        // Начатое достижение
+        &_started{
+          --color: #{$gold};
+          --background: #{$gold-shadow};
+          --text-shadow: #{$gold-shadow};
+        }
+        // Завершенное достижение
+        &_finished{
+          color: #{$green};
+          --text-shadow: #{$green-shadow};
+        }
+
+        &-bar{
+          --progress: 0%;
+
+          display: block;
+          background:
+                  var(--background)
+                  linear-gradient(
+                                  to right,
+                                  $gold var(--progress),
+                                  transparent var(--progress)
+                  );
+          height: 8px;
+          margin: 10px auto 0;
+          box-shadow: 0 0 0 5px var(--background);
+        }
+      }
+    }
+  }
+}

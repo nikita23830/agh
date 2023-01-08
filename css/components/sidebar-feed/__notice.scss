@@ -1,0 +1,123 @@
+.sidebar-feed__notice{
+
+  // Счетчик уведомлений
+  &-status{
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .15s ease-in-out;
+    overflow: hidden;
+
+    &__icon{
+      --background: #{alpha($white, .05)};
+
+      display: flex;
+      position: relative;
+      background: var(--background);
+      height: 54px;
+      width: 54px;
+      align-items: center;
+      justify-content: center;
+      @include bordered(var(--background));
+
+      &::before{
+        content:'';
+        display: block;
+        background: url('#{$url}/icon/notice-bell.png') no-repeat center;
+        background-size: cover;
+        width: 48px;
+        height: 48px;
+        transform-origin: center;
+        image-rendering: pixelated;
+      }
+    }
+    &__counter{
+      position: absolute;
+      font-family: MinecraftTitle, sans-serif;
+      font-size: 24px;
+      line-height: 0;
+      color: $gold;
+      top: 5px;
+      right: -10px;
+      text-shadow: 2px 2px $gold-shadow;
+    }
+
+    &_unread{
+      .sidebar-feed__notice-status__icon{
+        //--background: #{alpha($gold, .1)};
+        &::before{
+          background-image: url('#{$url}/icon/notice-bell-unread.png')!important;
+          animation: notice-bell-rings 1.5s ease-in infinite;
+        }
+      }
+    }
+
+    @keyframes notice-bell-rings{
+      0%, 45%, 100%{
+        transform: rotate(0);
+      }
+      5%, 25%{
+        transform: rotate(45deg);
+      }
+      15%, 35%{
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  // Уведомление
+  &-item{
+    --background: #{alpha($white, .1)};
+    --color: #{$white};
+    --text-shadow: #{$none};
+
+    display: block;
+    position: relative;
+    background: var(--background);
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 15px;
+    width: 100%;
+    min-height: 54px;
+    transition: .15s ease-in-out;
+    @include bordered(var(--background));
+    text-align: left;
+
+    // Модификаторы цвета
+    &_role{
+      // Разные цветовые состояния
+      &-primary{
+        --background: #{alpha($blue, .2)};
+        --color: #{$aqua};
+      }
+      &-success{
+        --background: #{alpha($green, .2)};
+        --color: #{$green};
+      }
+      &-danger{
+        --background: #{alpha($red, .2)};
+        --color: #{$red};
+      }
+
+      &-warning{
+        --background: #{alpha($gold, .2)};
+        --color: #{$gold};
+      }
+      // Кнопка "Показать все уведомления"
+      &-more{
+        min-height: 0;
+        padding: 10px 0;
+        text-align: center;
+      }
+    }
+  }
+
+  // Метаданные @ Время получения уведомления
+  &-meta{
+    display: block;
+    color: $gray;
+    opacity: .8;
+    text-shadow: 0 0 transparent;
+  }
+}

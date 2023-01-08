@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+.personalization{
+
+
+  // Навигация / Голова, тело, питомец, эффекты
+  &-nav{
+    position: relative;
+    padding: 25px 0 0;
+    z-index: 2;
+
+    // Внутренний список
+    &__list{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(79px, 1fr));
+      align-items: center;
+
+      box-shadow:
+              0 5px alpha($white, .15);
+      text-align: center;
+      list-style: none;
+
+      // Разделитель списка
+      &-separator{
+        display: block;
+        background: $white;
+        height: 16px;
+        width: 4px;
+        margin: 0 15px;
+      }
+    }
+
+    // Вкладка
+    &__item{
+      --background: #{alpha($black, .3)};
+      --checked-shadow: transparent;
+      --hover-shadow: transparent;
+
+      display: block;
+      position: relative;
+      padding: 5px;
+      transition: .15s ease-in-out;
+      box-shadow:
+              0 5px 0 var(--hover-shadow),
+              0 10px 0 var(--checked-shadow),
+              0 35px 30px -25px var(--checked-shadow);
+
+      &:hover{
+        --hover-shadow: #{alpha($white, .2)};
+      }
+
+      // Состояние активной вкладки
+      &_checked{
+        --checked-shadow: #{$gold};
+      }
+
+      // Иконка вкладки
+      &-img{
+        display: block;
+        width: 64px;
+        margin: auto;
+        pointer-events: none!important;
+      }
+    }
+  }
+
+  &-grid{
+    display: grid;
+    grid-template-columns: 1fr 50%;
+  }
+
+  // Область кастомизации персонажа
+  &__character{
+    position: relative;
+
+    &-skin{
+      position: fixed;
+      display: block;
+      top: 180px;
+      margin: 0 0 0 -150px;
+    }
+  }
+
+  // Окно с галереей персонализации
+  &-gallery{
+    position: relative;
+    padding: 25px 0;
+    z-index: 1;
+  }
+
+  // Заголовок
+  &-heading{
+    font-size: 21px;
+
+    &:not(:first-of-type){
+      margin-top: 30px;
+    }
+
+  }
+
+  // Список
+  &-list{
+    --background: #{alpha($black, .9)};
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+
+    background: var(--background);
+    margin: 25px 0 0;
+    @include bordered(var(--background));
+    list-style: none;
+
+    &:not(:last-of-type){
+      margin-bottom: 26px;
+    }
+  }
+
+  // Карточки элементов персонализации в галерее
+  &-item{
+    --text-shadow-size: 3px;
+    --inset-shadow: #{alpha($white, .1)};
+    --gradient: var(--inset-shadow);
+
+    display: grid;
+    align-items: end;
+
+    position: relative;
+    background:
+            radial-gradient(
+                            #{var(--gradient)},
+                            transparent 75%
+            ) center;
+    line-height: 32px;
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+    height: 200px;
+    box-shadow: inset 0 0 0 5px var(--inset-shadow);
+    text-align: center;
+
+    // Состояния карточки элемента персонализации
+    &-purchased{
+      --inset-shadow: #{alpha($blue, .4)};
+
+      // Модификатор активного состояния
+      &_checked{
+        --gradient: #{alpha($gold, .4)};
+        --inset-shadow: #{$gold};
+
+        pointer-events: none;
+
+        &::after{
+          content: 'Выбрано';
+          position: relative;
+          color: $gold;
+          line-height: 48px;
+          text-shadow: 3px 3px $gold-shadow;
+        }
+      }
+    }
+
+    // Контейнер для централизации картинки элемента персонализации
+    &__preview{
+      display: grid;
+      align-items: center;
+
+      position: absolute;
+      padding: 20px;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+
+      //Картинка элемента персонализации
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &__overlay{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+      background: alpha($black, .5);
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+}

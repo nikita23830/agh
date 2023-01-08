@@ -1,0 +1,209 @@
+.stats{
+  padding: 50px 0;
+
+  // Раздел со статистикой
+  &__area{
+    --background: #{alpha($black, .5)};
+
+    background: var(--background);
+    padding: 35px 25px;
+    margin: 35px 10px;
+    @include bordered(var(--background), 10);
+
+    // Модификатор стилей
+    &_style{
+      // Без фона
+      &-transparent {
+        --background: transparent;
+      }
+    }
+
+    // Заголовок раздела
+    &-heading{
+      --text-shadow-size: 3px;
+
+      font-size: 20px;
+      color: $green;
+      margin: 0 0 15px;
+      text-shadow: 3px 3px $green-shadow;
+    }
+  }
+
+  // Контейнер со статистикой по рейтингам
+  &__ratings{
+    list-style: none;
+
+    // Контейнер списка с перечнем рейтинговых позиций
+    &-list{
+      --columns: 5;
+      --font-size: 16px;
+      --font-size-rank: 42px;
+
+      display: grid;
+      grid-template-columns: repeat(var(--columns), 1fr);
+      grid-gap: 5px;
+
+      line-height: 1.4;
+      font-size: var(--font-size);
+      color: $dark-gray;
+      text-shadow: 2px 2px $dark-gray-shadow;
+      list-style: none;
+
+      &_type{
+        &-compact{
+          --columns: 3;
+          --font-size: 12px;
+          --font-size-rank: 36px;
+        }
+      }
+    }
+
+    // Позиция в рейтинге
+    &-rank{
+      font-family: MinecraftTitle,sans-serif;
+      font-size: var(--font-size-rank);
+      color: $dark-gray;
+      text-shadow: 6px 6px $dark-gray-shadow;
+
+      // По-умолчанию стилизовано состояние без рейтинга
+      // Модификатор стилизует состояние топа рейтинга
+      &_type{
+        &-leading{
+          color: $gold;
+          text-shadow: 6px 6px $gold-shadow;
+        }
+      }
+    }
+  }
+
+  // Список с данными статистики
+  &-list{
+    --background-odd: #{alpha($green, .1)};
+    --background-even: #{alpha($green, .2)};
+    --columns: 1fr auto;
+    --font-size: 18px;
+    list-style: none;
+
+    // Модификатор типового вида списка
+    &_type{
+      // Компактный вид
+      &-compact{
+        --font-size: 16px;
+      }
+      // Красная стилизация для списка наказний
+      &-danger{
+        --background-odd: #{alpha($red, .1)};
+        --background-even: #{alpha($red, .2)};
+        --columns: 2fr 1fr auto;
+      }
+    }
+
+    // Строчка со статистикой
+    &__item{
+      --color: #{$green};
+      --text-shadow: #{$green-shadow};
+
+      display: grid;
+      grid-template-columns: var(--columns);
+      align-items: center;
+
+      background: var(--background-odd);
+      line-height: 1.6;
+      font-size: var(--font-size);
+      color: $gray;
+      margin: 0 0 3px;
+      text-shadow: 3px 3px $gray-shadow;
+
+      // Каждая вторая строчка выделяется другим
+      // цветом для контрастности
+      &:nth-child(even){
+        background: var(--background-even);
+      }
+
+      // Количественные данные в статистике
+      // выделяются другим цветом
+      &-value{
+        color: var(--color);
+        text-shadow: 3px 3px var(--text-shadow);
+      }
+
+      // Выделение фрагмента текста
+      // с указанием позиции в рейтинге
+      &-mark{
+        color: $yellow;
+        text-shadow: 3px 3px $yellow-shadow;
+      }
+
+      // Модификатор для изменения стилизации строки
+      &_type{
+        // Тип - лидирующий в рейтинге
+        &-leading{
+          --color: #{$gold};
+          --text-shadow: #{$gold-shadow};
+
+          background: alpha($gold, .3)!important;
+          color: $white;
+          text-shadow: 3px 3px $white-shadow;
+        }
+      }
+    }
+  }
+
+  // История покупок донат-групп
+  &-donate{
+    // Список
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 25px;
+
+      margin: 35px 0 0;
+      list-style: none;
+
+      // Карточка с привилегией
+      &-item {
+        --color: #{$gray-shadow};
+        --bordered: var(--color);
+
+        background: alpha($black, .3) no-repeat center;
+        background-size: 96px;
+        line-height: 1.5;
+        padding: 15px 0;
+        @include bordered(var(--bordered), 5);
+        image-rendering: pixelated;
+        text-align: center;
+
+        // Модификаторы со стилизацией под разные цвета
+        &_style{
+          &-gold{
+            --color: #{$gold};
+          }
+          &-light-purple{
+            --color: #{$light-purple};
+            --bordered: #{$light-purple-shadow};
+          }
+          &-blue{
+            --color: #{$blue};
+            --bordered: #{$blue-shadow};
+          }
+          &-green{
+            --color: #{$green};
+            --bordered: #{$green-shadow};
+          }
+          &-none{
+            background-image: url('../images/privilege/unknown.png');
+          }
+        }
+      }
+    }
+
+    // Внутренний заголовок
+    &__heading{
+      font-family: MinecraftTitle,sans-serif;
+      line-height: 1;
+      font-size: 24px;
+      color: var(--color);
+      text-shadow: 3px 3px $black-shadow;
+    }
+  }
+}

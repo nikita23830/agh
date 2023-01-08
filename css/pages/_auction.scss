@@ -1,0 +1,245 @@
+.auction{
+  // Вступительное описание аукциона
+  &-about{
+    --text-shadow-size: 4px;
+
+    line-height: 32px;
+    font-size: 24px;
+    color: $gray;
+    max-width: 900px;
+    margin: 15px auto;
+    text-shadow: var(--text-shadow-size) var(--text-shadow-size) $gray-shadow;
+    text-align: center;
+  }
+
+  // Небольшое меню с разными разделами аукциона
+  &-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    justify-content: center;
+    grid-gap: 25px;
+
+    margin: 35px 0 0;
+
+    // Элементы меню
+    &__item{
+      background:
+              alpha($black, .5);
+      padding: 60px 15px;
+      line-height: 28px;
+      @include bordered(var(--color));
+
+      // Модификатор стилизации цвета
+      &_style{
+        &-green{
+          --color: #{$green};
+          --text-shadow: #{$green-shadow};
+        }
+        &-gold{
+          --color: #{$gold};
+          --text-shadow: #{$gold-shadow};
+        }
+        &-light-purple{
+          --color: #{$light-purple};
+          --text-shadow: #{$light-purple-shadow};
+        }
+      }
+
+      // Заголовок
+      &-heading{
+        font-size: 24px;
+        color: var(--color);
+        text-shadow: 4px 4px var(--text-shadow);
+      }
+
+      // Описание
+      &-about{
+        display: block;
+        font-size: 18px;
+        color: $gray;
+        margin: 10px 0 0;
+        text-shadow: 2px 2px $gray-shadow;
+      }
+
+      // Картинка
+      &-img{
+        display: block;
+        width: 160px;
+        height: 160px;
+        margin: 30px auto 0;
+        image-rendering: pixelated;
+      }
+    }
+  }
+
+  // Контейнер для категорий и списка аукционов
+  &-content{
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: auto auto 1fr;
+    align-items: start;
+    grid-gap: 25px;
+
+    margin: 25px 0 0;
+  }
+
+  // Категории и фильтры
+  &-categories{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    // Список категорий
+    &__list{
+      background: alpha($black, .3);
+      margin: 0 0 25px;
+      @include bordered($white-shadow);
+      list-style: none;
+
+      // Отступы и границы между элементами списка
+      li:not(:last-child){
+        margin-bottom: 5px;
+        box-shadow: 0 5px $gray-shadow;
+      }
+    }
+
+    // Категория
+    &__item{
+      --color: #{$gray};
+      --text-shadow: #{$gray-shadow};
+
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      grid-gap: 15px;
+
+      line-height: 48px;
+      padding: 0 15px;
+      text-align: left;
+
+      // Активная категория
+      &_checked{
+        --color: #{$white};
+        --text-shadow: #{$white-shadow};
+
+        background: alpha($black, .5);
+        @include bordered($white);
+        pointer-events: none;
+      }
+
+      // Иконка категории
+      &-img{
+        width: 32px;
+      }
+    }
+  }
+
+  //
+  &-filters {
+    grid-template-columns: auto auto 1fr;
+    grid-gap: 0;
+
+    background: alpha($black, .3);
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    @include bordered($white-shadow);
+
+    .btn-mark{
+      padding: 10px 0;
+    }
+  }
+
+  //
+  &-meta{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
+    .btn{
+      padding: 0 25px;
+      line-height: 48px;
+    }
+  }
+
+  // Список аукционов
+  &-list{
+    --columns: 5;
+
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-gap: 15px;
+
+    list-style: none;
+
+    // Модификатор сетки
+    &_grid{
+      &-7{
+        --columns: 7;
+      }
+    }
+
+    // Модификатор для раздела с историей аукционов
+    &_history{
+      .auction-list__item-preview,
+      .auction-list__item-price{
+        opacity:.5;
+      }
+    }
+
+    // Карточка - элемент списка
+    &__item{
+      --background: #{alpha($black, .5)};
+
+      display: grid;
+      grid-template-rows: 16px 1fr 50px;
+      justify-content: center;
+      grid-gap: 15px;
+
+      background: var(--background);
+      height: 100%;
+      padding: 15px 0;
+      @include bordered(var(--background));
+
+      // Таймер до окончания аукциона
+      &-timer{
+        font-size: 14px;
+      }
+
+      // Контейнер для картинки товара
+      &-preview{
+        position: relative;
+        height: 96px;
+        width: 96px;
+        margin: 0 auto;
+      }
+
+      // Картинка товара
+      &-img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        image-rendering: pixelated;
+      }
+
+      // Количество товара
+      &-count{
+        position: absolute;
+        font-size: 36px;
+        right: 0;
+        bottom: 0;
+      }
+
+      // Элемент с ценой или ставкой
+      &-price{
+        --background: #{alpha($gold, .1)};
+
+        display: block;
+        background: var(--background);
+        font-family: MinecraftTitle, sans-serif;
+        line-height: 20px;
+        font-size: 14px;
+        padding: 5px;
+        white-space: nowrap;
+        @include bordered(var(--background))
+      }
+    }
+  }
+}

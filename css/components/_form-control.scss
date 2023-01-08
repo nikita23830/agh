@@ -1,0 +1,38 @@
+.form-control{
+  display: inline-grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  grid-gap: 8px;
+
+  vertical-align: top;
+  cursor: text;
+
+  // Текст перед полем ввода
+  &__text{
+    /* */
+  }
+
+  // Поле ввода
+  &__input{
+    border: none;
+    width: 100%;
+    background: none;
+    font-size: inherit;
+    color: inherit;
+    text-shadow: inherit;
+    outline: none;
+
+    // Значение по-умолчанию
+    &::placeholder{
+      color: alpha($black, .6);
+      text-shadow: none;
+    }
+
+    // Модификатор для инвертации плейсхолдера
+    &_placeholder-invert{
+      &::placeholder{
+        color: alpha($white, .6);
+      }
+    }
+  }
+}

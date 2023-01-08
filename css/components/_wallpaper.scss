@@ -1,0 +1,71 @@
+// Основной контейнер
+// Для модалок и экранов кабинета
+// С затемнением *** блюром фона
+.overlay{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-gap: 5px;
+
+  position: absolute;
+  background: alpha($black, .6);
+  padding: 0 105px 0 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .15s ease-in-out;
+  overflow: hidden;
+  z-index: 1;
+
+  // Инициализация размытия заднего фона
+  @include background-blur-init;
+
+  // Модификатор для экрана с боевым пропуском
+  &_type{
+    &-battle-pass{
+      background:
+              url('../images/gui/battle-pass.png')
+              no-repeat center,
+
+              alpha($black, .8)
+              linear-gradient(
+                              90deg,
+                              alpha($gold, .2) 40%,
+                              alpha($green, .2) 60%
+              );
+      background-size: 1280px, auto;
+      padding-right: 100px!important;
+      image-rendering: pixelated;
+    }
+  }
+}
+
+// Контейнер для ограничения по ширине
+.wrapper{
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+
+  // Модификатор для модального окна с центрированием
+  &_modal{
+    display: flex;
+    justify-content: center;
+    padding: 75px 0 150px;
+
+    &-wide{
+      background: alpha($black, .9);
+      padding: 0;
+      max-width: 100%;
+    }
+  }
+
+  // Выравнивание контейнера при его
+  // использовании вне компонента .page
+  &_fixed{
+    position: relative;
+    left: -8px;
+  }
+}
+
+
+

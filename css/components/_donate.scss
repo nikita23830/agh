@@ -1,0 +1,190 @@
+.donate{
+
+  // Список-контейнер привилегий
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    //grid-template-rows: repeat(2, minmax(321px, 612px));
+    grid-gap: 32px 24px;
+    list-style: none;
+
+    // Элемент списка
+    &-item{
+
+    }
+  }
+
+  // Карточка товара
+  &-card{
+    --background: #{alpha($black, .5)};
+    --border: var(--background);
+    --color: #{$white};
+    --value: 8px;
+    --value-reverse: -8px;
+
+    display: block;
+    position: relative;
+    background: var(--background);
+    min-height: 319px;
+    height: 100%;
+    padding: 25px 0;
+    @include bordered(var(--border), 8);
+    text-align: center;
+
+    // Отключен
+    &_disabled{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+
+      &__icon{
+        width: 160px;
+        image-rendering: pixelated;
+      }
+    }
+
+    // Модификаторы цвета
+    &_style{
+      &-green{
+        --color: #{$green};
+      }
+      &-red{
+        --color: #{$red};
+      }
+      &-blue{
+        --color: #{$blue};
+      }
+      &-aqua{
+        --color: #{$aqua};
+      }
+      &-light-purple{
+        --color: #{$light-purple};
+      }
+      &-gold{
+        --border: #{$gold};
+        --color: #{$gold};
+      }
+      &-gold-alt{
+        --color: #{$gold};
+      }
+      &-gray{
+        --color: #{$gray};
+      }
+      &-yellow{
+        --color: #{$yellow};
+      }
+    }
+
+    // Плашка для отображения скидки или специального предложения
+    &__sale{
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: -18px;
+      right: 0;
+      left: 0;
+      text-align: center;
+      z-index: 1;
+
+      &-text{
+        display: inline-block;
+        background: $red;
+        line-height: 28px;
+        font-size: 18px;
+        color: $white;
+        padding: 0 15px;
+        white-space: nowrap;
+        text-shadow: 3px 3px $white-shadow;
+        box-shadow: 5px 5px alpha($dark-red, .5);
+      }
+    }
+
+    // Иконка товара
+    &__icon{
+      display: block;
+      height: 150px;
+      width: 150px;
+      margin: 0 auto;
+      image-rendering: pixelated;
+
+      &_offset{
+        margin: 15px auto;
+      }
+    }
+
+    // Заголовок
+    &__title{
+      font-family: MinecraftTitle, sans-serif;
+      font-size: 24px;
+      line-height: 1.2;
+      color: var(--color);
+      min-height: 58px;
+      padding: 0 10px;
+      text-shadow: 4px 4px alpha($black, .6);
+    }
+
+    // Стоимость
+    &__price{
+      line-height: 24px;
+      font-size: 18px;
+      color: $white;
+      text-shadow: 3px 3px $white-shadow;
+      text-align: center;
+
+      // Область с ценником
+      &-area{
+        --background: #{alpha($dark-gray-shadow, .9)};
+
+        display: inline-block;
+        background: var(--background);
+        padding: 5px 15px;
+        @include bordered(var(--background), 8)
+      }
+
+      //
+      &-text{
+        display: block;
+        font-family: MinecraftTitle, sans-serif;
+        color: var(--gray);
+        font-size: 18px;
+        margin: 0 0 5px;
+        text-shadow: 0 0;
+
+        // Модификатор
+        &_disabled{
+          color: var(--dark-gray);
+          line-height: 26px;
+          margin: 0;
+        }
+      }
+
+      // Зачеркнутая цена (для отображения разницы при скидке)
+      &-strike{
+        display: inline-block;
+        position: relative;
+        padding: 0 4px;
+        color: $gray;
+        text-shadow: 4px 4px $dark-gray-shadow;
+
+        // Убавляем прозрачность у иконки валюты
+        .currency{
+          opacity: .5;
+        }
+
+        // Зачеркивающая полоса
+        &::before{
+          content: '';
+          display: block;
+          position: absolute;
+          background: $red;
+          height: 3px;
+          width: 100%;
+          top: 13px;
+          left: 0;
+          box-shadow: 3px 3px $red-shadow;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}

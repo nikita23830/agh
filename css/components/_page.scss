@@ -1,0 +1,72 @@
+.page{
+  --gradient: #{alpha($gray, .1)};
+
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+
+  padding: 25px 0;
+  overflow: hidden auto;
+
+  // Модификатор стилей
+  &_style{
+    &-gold{
+      --gradient: #{alpha($gold, .2)};
+    }
+  }
+
+  // Заголовок h1
+  &-heading{
+    font-family: MinecraftTitle, sans-serif;
+    font-size: var(--font-size);
+    line-height: 1;
+    color: $white;
+    text-shadow:
+            var(--text-shadow-size)
+            var(--text-shadow-size)
+            $white-shadow;
+
+    // Модификатор для выравнивания текста по центру
+    &_align-center{
+      text-align: center;
+    }
+
+    // Наследование шрифта у всех дочерних элементов
+    *{
+      font: inherit;
+    }
+  }
+
+  // Сгруппированный список привилегий
+  &__area{
+    padding: 15px 0;
+
+    // Модификатор промо-раздела
+    &_promo{
+      background:
+              linear-gradient(
+                              to right,
+                              transparent 2%,
+                              alpha($green, .5),
+                              alpha($gold, .5),
+                              transparent 98%
+              );
+      padding: 25px 0 35px;
+      margin: 0 0 15px;
+    }
+
+    // Заголовок 2-го уровня
+    &-heading{
+      font-size: 24px;
+      color: $green;
+      margin: 0 0 35px;
+      text-shadow: 3px 3px $green-shadow;
+      text-align: center;
+
+      &__timer{
+        color: $gold;
+        text-shadow: 3px 3px $gold-shadow;
+      }
+    }
+  }
+}
